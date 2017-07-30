@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StoreKarrier</string>
+    <string name="title_search">탐색하기</string>
+    <string name="title_saved_list">저장목록</string>
+    <string name="title_trip">여행</string>
+    <string name="title_message">메세지</string>
+    <string name="title_profile">프로필</string>
+    <string name="query_hint">검색</string>
+</resources>

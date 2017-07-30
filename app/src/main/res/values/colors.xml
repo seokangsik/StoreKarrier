@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4081</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="colorPink">#dc5554</color>
+    <color name="colorLightPink">#e37776</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="transParent">#00000000</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorCrimson">	#DC143C</color>
+</resources>
