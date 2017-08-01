@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c12f7a06eb35c7fc1f146d362a7de43c1d869c2f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70c471645f58ae7cd45a9adc61c04575cf37a358">
+        <dex dex="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_d48fd395520e9f56ac817b02a29fec77bf355525\classes.dex" />
+    </item>
+
+</items>

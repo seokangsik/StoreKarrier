@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -19,18 +20,26 @@ import com.google.android.gms.maps.model.MarkerOptions;
  */
 
 public class StoreActivity extends AppCompatActivity implements OnMapReadyCallback {
-    private LinearLayout reserve;
+    private LinearLayout message;
+    private Button reserveBtn;
+    private LinearLayout storeToolbar;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
+        storeToolbar = (LinearLayout) findViewById(R.id.store_bottom_toolbar);
+        storeToolbar.bringToFront();
         FragmentManager fragmentManager = getFragmentManager();
         MapFragment mapFragment = (MapFragment)fragmentManager
-                .findFragmentById(R.id.map);
+                .findFragmentById(R.id.store_map);
         mapFragment.getMapAsync(this);
-        reserve =(LinearLayout) findViewById(R.id.reserve_layout);
-        reserve.setOnClickListener(BtnClickListener);
+        message =(LinearLayout) findViewById(R.id.message_layout);
+        message.setOnClickListener(BtnClickListener);
+
+        reserveBtn = (Button) findViewById(R.id.reserve_btn);
+        reserveBtn.setOnClickListener(BtnClickListener);
     }
+
 
 
     @Override
@@ -49,8 +58,18 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
     public View.OnClickListener BtnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext() , ReserveActivity.class);
-            startActivity(intent);
+            Intent intent;
+            switch (v.getId()){
+                case R.id.message_layout:
+                    intent = new Intent(getApplicationContext() , ReserveActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.reserve_btn:
+                    intent = new Intent(getApplicationContext(), ReserveActivity.class);
+                    startActivity(intent);
+                    break;
+            }
+
         }
     };
 }
