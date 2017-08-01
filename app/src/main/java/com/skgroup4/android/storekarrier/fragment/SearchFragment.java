@@ -5,10 +5,15 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.AppBarLayout;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.skgroup4.android.storekarrier.R;
 
@@ -23,8 +28,10 @@ public class SearchFragment extends Fragment {
     private Button recommendBtn;
     private Button storeBtn;
     private Button placeBtn;
-
-
+    private ImageView collapseBtn;
+    private AppBarLayout appBarLayout;
+    private Toolbar mToolbar;
+    private LinearLayout searchTabLayout;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -33,16 +40,36 @@ public class SearchFragment extends Fragment {
         recommendBtn = (Button) view.findViewById(R.id.recommend_btn);
         storeBtn = (Button) view.findViewById(R.id.store_btn);
         placeBtn = (Button) view.findViewById(R.id.place_btn);
+        collapseBtn = (ImageView) view.findViewById(R.id.collapsing_btn);
+        //툴바 expand collapse
 
+        mToolbar = (Toolbar) view.findViewById(R.id.toolbar);
 
-        //
+        appBarLayout = (AppBarLayout) view.findViewById(R.id.appbar_layout);
+        appBarLayout.setExpanded(false);
+        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+
+            @Override
+            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+                Log.d("OFFSET" , verticalOffset + "");
+
+                if(verticalOffset >=-400){
+                    mToolbar.setVisibility(View.INVISIBLE);
+                }else if (verticalOffset < -400) {
+                    mToolbar.setVisibility(View.VISIBLE);
+                }
+            }
+
+        });
 
 
 
         //리스너 등록
+        mToolbar.setOnClickListener(BtnClickListener);
         recommendBtn.setOnClickListener(BtnClickListener);
         storeBtn.setOnClickListener(BtnClickListener);
         placeBtn.setOnClickListener(BtnClickListener);
+        collapseBtn.setOnClickListener(BtnClickListener);
         return view;
     }
 
@@ -81,6 +108,12 @@ public class SearchFragment extends Fragment {
                     fragment = new PlaceFragment();
                     fragmentTransaction.replace(R.id.search_container, fragment);
                     fragmentTransaction.commit();
+                    break;
+                case R.id.toolbar:
+                    appBarLayout.setExpanded(true);
+                    break;
+                case R.id.collapsing_btn:
+                    appBarLayout.setExpanded(false);
                     break;
             }
         }
