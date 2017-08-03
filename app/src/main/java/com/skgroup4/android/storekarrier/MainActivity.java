@@ -4,11 +4,13 @@ package com.skgroup4.android.storekarrier;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.skgroup4.android.storekarrier.fragment.MessageFragment;
 import com.skgroup4.android.storekarrier.fragment.ProfileFragment;
@@ -17,7 +19,14 @@ import com.skgroup4.android.storekarrier.fragment.SearchFragment;
 import com.skgroup4.android.storekarrier.fragment.TripFragment;
 
 public class MainActivity extends AppCompatActivity {
-
+static final int REQUEST_CODE_GET_HOSTING_INFO = 1001;
+    String ctry="";
+    String cty="";
+    String regin="";
+    String rdaddr="";
+    String dtils="";
+    String mladdr="";
+    String crrier="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +44,27 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationViewHelper.removeShiftMode(navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
+    public void onButtonClicked4HostingMode(View v){
+        Intent intent = new Intent(getApplicationContext(),HostModeActivity.class);
+        startActivity(intent);
+    }
+    public void onButtonClicked4NewHosting(View v){
+        Intent intent = new Intent(getApplicationContext(),NewHostingActivity.class);
+        startActivityForResult(intent,REQUEST_CODE_GET_HOSTING_INFO);
+    }
+    protected void onActivityResult(int requestCode,int resultCode,Intent intent){
+        super.onActivityResult(requestCode,resultCode,intent);
 
+        if(requestCode == REQUEST_CODE_GET_HOSTING_INFO){
+           ctry = intent.getStringExtra("country");
+           cty = intent.getStringExtra("city");
+           regin = intent.getStringExtra("region");
+           rdaddr = intent.getStringExtra("road_addr");
+           dtils = intent.getStringExtra("details");
+           mladdr = intent.getStringExtra("zipcode");
+           crrier = intent.getStringExtra("carrier");
+        }
+    }
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 

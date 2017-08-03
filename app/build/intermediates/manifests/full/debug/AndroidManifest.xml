@@ -38,6 +38,8 @@
         <activity android:name="com.skgroup4.android.storekarrier.PlaceActivity" />
         <activity android:name="com.skgroup4.android.storekarrier.HostModeActivity" />
         <activity android:name="com.skgroup4.android.storekarrier.ReserveActivity" />
+        <activity android:name="com.skgroup4.android.storekarrier.NewHostingActivity" />
+        <activity android:name="com.skgroup4.android.storekarrier.ExplainStorageActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
