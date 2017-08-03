@@ -24,4 +24,7 @@ public class HostStoreFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_host_store , container , false);
         return view;
     }
+    public void onClick4StorageInfo(){
+
+    }
 }
