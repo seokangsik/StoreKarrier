@@ -1,156 +1,156 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:2:1-33:12
 	package
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:3:5-48
-		INJECTED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:5:5-30:19
-MERGED from [com.android.support:design:25.3.1] C:\Users\Seo\.android\build-cache\1efcdb50af2e8981d48fd1fb0aaa2c4ae384adf1\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Seo\.android\build-cache\9005e5f99fc30610fed36f474b8d89b27afd9245\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Seo\.android\build-cache\af58c6f3e302a939118bfdfc4780d5573affad1e\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Seo\.android\build-cache\b46eef2d78bb18d9dada06360b4d0e9a6c5caaba\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Seo\.android\build-cache\096ad5766c483ec6560986527088f2cf6a8cc702\output\AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Seo\.android\build-cache\2d1dd49ed1e839bf68c770b35f0840e21f6bb986\output\AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-location:10.2.1] C:\Users\Seo\.android\build-cache\a2a82e9f22cbf1eae041c55b9524bf4f742f3019\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Seo\.android\build-cache\37ec642a9c8296752aa6904d6213cd63da9cb63e\output\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:10.2.1] C:\Users\Seo\.android\build-cache\94621bcd188389808da4e8a54051b8428d98bbea\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\Seo\.android\build-cache\2ef70c9bc803a55566e257b3b7907ff01294f5b8\output\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Seo\.android\build-cache\29b90f4c96b5ed793f4267815ddc9bf2357f00ce\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Seo\.android\build-cache\ff1f88cf4434f22ab7d2fd7d7ee01b18e9673da3\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Seo\.android\build-cache\f8fbd5a7155d86b8a48d078b8077e742ee77f09d\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Seo\.android\build-cache\c40a63d2c643b5caa290390ae9a8ef2e21ddd82d\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Seo\.android\build-cache\362462518ea436bf00b9bb63e823fedf2c9fef43\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Seo\.android\build-cache\2dfb45d29e45d09af686c330300c67d5cd19caf3\output\AndroidManifest.xml:29:5-20
+ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:5:5-30:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\b99b1ea1fd1f7786df99d83f8a947e5321d7da76\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\9f77454a4d83f7b2cafb77e932025170cbdbb7d5\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b7f5267fd35b1f75e513fec493de8709a9b57289\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\b16866574cf43bbc57c05feee948a4ce4776b1f7\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b09067bbdf9c1e5c153d6bfe697636986c8b5e78\output\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Administrator\.android\build-cache\cde7402d718c21af8698eb5e228e28282f0b80c2\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-location:10.2.1] C:\Users\Administrator\.android\build-cache\51f2a593580496214d78139fff9588809196aa3a\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Administrator\.android\build-cache\43ce2b8619ad7164d32e6cf30f26c08c9c1bbe8b\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] C:\Users\Administrator\.android\build-cache\32cf8f18b4833bfa79e465ba840512aa1b7baf65\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\Administrator\.android\build-cache\7198f088126c51809e7310b77a087940d34467ca\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\6b75780ab874db89f789f6702af4b9c88e3c6e41\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\983d68c3e0d4f4eebf0cffe815fbb75328d37a71\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\f4714beee4ec9c5f35c8eaff3a21ce1876948701\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\aaa17edd94f6f86ca03b921c5b0d6966612190cd\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\a46605b93511432805de2b19f23e8e2675ccc357\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\5bc44d3284b1069f4044d9d159a590c0a354cd8a\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:8:9-41
 	android:supportsRtl
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:10:9-35
 	android:roundIcon
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:9:9-54
 	android:allowBackup
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:7:9-43
 	android:theme
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.skgroup4.android.storekarrier.MainActivity
-ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:13:9-22:20
+ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:13:9-22:20
 	android:label
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:15:13-45
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:15:13-45
 	android:name
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:14:13-41
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:14:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:20:27-74
 activity#com.skgroup4.android.storekarrier.StoreActivity
-ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:23:9-50
+ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:23:9-50
 	android:name
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:23:19-48
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:23:19-48
 activity#com.skgroup4.android.storekarrier.PlaceActivity
-ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:24:9-50
+ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:24:9-50
 	android:name
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:24:19-48
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:24:19-48
 activity#com.skgroup4.android.storekarrier.HostModeActivity
-ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:25:9-53
+ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:25:9-53
 	android:name
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:25:19-51
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:25:19-51
 activity#com.skgroup4.android.storekarrier.ReserveActivity
-ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:26:9-52
+ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:26:9-52
 	android:name
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:26:19-50
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:26:19-50
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:27:9-29:71
+ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:27:9-29:71
 	android:value
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:29:13-68
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:29:13-68
 	android:name
-		ADDED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml:28:13-58
+		ADDED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml:28:13-58
 uses-sdk
-INJECTED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:25.3.1] C:\Users\Seo\.android\build-cache\1efcdb50af2e8981d48fd1fb0aaa2c4ae384adf1\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Seo\.android\build-cache\9005e5f99fc30610fed36f474b8d89b27afd9245\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Seo\.android\build-cache\af58c6f3e302a939118bfdfc4780d5573affad1e\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Seo\.android\build-cache\b46eef2d78bb18d9dada06360b4d0e9a6c5caaba\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Seo\.android\build-cache\096ad5766c483ec6560986527088f2cf6a8cc702\output\AndroidManifest.xml:20:5-43
-MERGED from [com.github.ksoichiro:android-observablescrollview:1.5.0] C:\Users\Seo\.android\build-cache\3ec8f7c592210602b00cfe96e8df745de45b68a0\output\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Seo\.android\build-cache\552df4b6825db373fe1fd232ab82995ca0d426b1\output\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Seo\.android\build-cache\2d1dd49ed1e839bf68c770b35f0840e21f6bb986\output\AndroidManifest.xml:23:5-43
-MERGED from [com.google.android.gms:play-services-location:10.2.1] C:\Users\Seo\.android\build-cache\a2a82e9f22cbf1eae041c55b9524bf4f742f3019\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Seo\.android\build-cache\37ec642a9c8296752aa6904d6213cd63da9cb63e\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:10.2.1] C:\Users\Seo\.android\build-cache\94621bcd188389808da4e8a54051b8428d98bbea\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\Seo\.android\build-cache\2ef70c9bc803a55566e257b3b7907ff01294f5b8\output\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Seo\.android\build-cache\29b90f4c96b5ed793f4267815ddc9bf2357f00ce\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Seo\.android\build-cache\ff1f88cf4434f22ab7d2fd7d7ee01b18e9673da3\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Seo\.android\build-cache\f8fbd5a7155d86b8a48d078b8077e742ee77f09d\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Seo\.android\build-cache\c40a63d2c643b5caa290390ae9a8ef2e21ddd82d\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Seo\.android\build-cache\362462518ea436bf00b9bb63e823fedf2c9fef43\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Seo\.android\build-cache\2dfb45d29e45d09af686c330300c67d5cd19caf3\output\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\b99b1ea1fd1f7786df99d83f8a947e5321d7da76\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\9f77454a4d83f7b2cafb77e932025170cbdbb7d5\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b7f5267fd35b1f75e513fec493de8709a9b57289\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\b16866574cf43bbc57c05feee948a4ce4776b1f7\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b09067bbdf9c1e5c153d6bfe697636986c8b5e78\output\AndroidManifest.xml:20:5-43
+MERGED from [com.github.ksoichiro:android-observablescrollview:1.5.0] C:\Users\Administrator\.android\build-cache\b21792264e60f0bd01d7218a3eaedd8ff8857ccf\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\f0f1ba5bd7ae23bde0528d27b57edc4502c83227\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Administrator\.android\build-cache\cde7402d718c21af8698eb5e228e28282f0b80c2\output\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-location:10.2.1] C:\Users\Administrator\.android\build-cache\51f2a593580496214d78139fff9588809196aa3a\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Administrator\.android\build-cache\43ce2b8619ad7164d32e6cf30f26c08c9c1bbe8b\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] C:\Users\Administrator\.android\build-cache\32cf8f18b4833bfa79e465ba840512aa1b7baf65\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\Administrator\.android\build-cache\7198f088126c51809e7310b77a087940d34467ca\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\6b75780ab874db89f789f6702af4b9c88e3c6e41\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\983d68c3e0d4f4eebf0cffe815fbb75328d37a71\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\f4714beee4ec9c5f35c8eaff3a21ce1876948701\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\aaa17edd94f6f86ca03b921c5b0d6966612190cd\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\a46605b93511432805de2b19f23e8e2675ccc357\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\5bc44d3284b1069f4044d9d159a590c0a354cd8a\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Seo\.android\build-cache\1efcdb50af2e8981d48fd1fb0aaa2c4ae384adf1\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\b99b1ea1fd1f7786df99d83f8a947e5321d7da76\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Seo\Documents\GitHub\StoreKarrier\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\Intern\HostUI\StoreKarrier\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\Seo\.android\build-cache\1efcdb50af2e8981d48fd1fb0aaa2c4ae384adf1\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Seo\.android\build-cache\9005e5f99fc30610fed36f474b8d89b27afd9245\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Seo\.android\build-cache\af58c6f3e302a939118bfdfc4780d5573affad1e\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Seo\.android\build-cache\b46eef2d78bb18d9dada06360b4d0e9a6c5caaba\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Seo\.android\build-cache\096ad5766c483ec6560986527088f2cf6a8cc702\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Seo\.android\build-cache\552df4b6825db373fe1fd232ab82995ca0d426b1\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Seo\.android\build-cache\29b90f4c96b5ed793f4267815ddc9bf2357f00ce\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Seo\.android\build-cache\ff1f88cf4434f22ab7d2fd7d7ee01b18e9673da3\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Seo\.android\build-cache\f8fbd5a7155d86b8a48d078b8077e742ee77f09d\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Seo\.android\build-cache\c40a63d2c643b5caa290390ae9a8ef2e21ddd82d\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Seo\.android\build-cache\362462518ea436bf00b9bb63e823fedf2c9fef43\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Seo\.android\build-cache\2dfb45d29e45d09af686c330300c67d5cd19caf3\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\b99b1ea1fd1f7786df99d83f8a947e5321d7da76\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\9f77454a4d83f7b2cafb77e932025170cbdbb7d5\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b7f5267fd35b1f75e513fec493de8709a9b57289\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\b16866574cf43bbc57c05feee948a4ce4776b1f7\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b09067bbdf9c1e5c153d6bfe697636986c8b5e78\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\f0f1ba5bd7ae23bde0528d27b57edc4502c83227\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\6b75780ab874db89f789f6702af4b9c88e3c6e41\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\983d68c3e0d4f4eebf0cffe815fbb75328d37a71\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\f4714beee4ec9c5f35c8eaff3a21ce1876948701\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\aaa17edd94f6f86ca03b921c5b0d6966612190cd\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\a46605b93511432805de2b19f23e8e2675ccc357\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\5bc44d3284b1069f4044d9d159a590c0a354cd8a\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Seo\.android\build-cache\1efcdb50af2e8981d48fd1fb0aaa2c4ae384adf1\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\b99b1ea1fd1f7786df99d83f8a947e5321d7da76\output\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Seo\.android\build-cache\1efcdb50af2e8981d48fd1fb0aaa2c4ae384adf1\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\b99b1ea1fd1f7786df99d83f8a947e5321d7da76\output\AndroidManifest.xml:26:9-47
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Seo\.android\build-cache\2d1dd49ed1e839bf68c770b35f0840e21f6bb986\output\AndroidManifest.xml:19:5-78
+ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Administrator\.android\build-cache\cde7402d718c21af8698eb5e228e28282f0b80c2\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Seo\.android\build-cache\2d1dd49ed1e839bf68c770b35f0840e21f6bb986\output\AndroidManifest.xml:19:22-76
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Administrator\.android\build-cache\cde7402d718c21af8698eb5e228e28282f0b80c2\output\AndroidManifest.xml:19:22-76
 uses-permission#android.permission.INTERNET
-ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Seo\.android\build-cache\2d1dd49ed1e839bf68c770b35f0840e21f6bb986\output\AndroidManifest.xml:20:5-66
+ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Administrator\.android\build-cache\cde7402d718c21af8698eb5e228e28282f0b80c2\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Seo\.android\build-cache\2d1dd49ed1e839bf68c770b35f0840e21f6bb986\output\AndroidManifest.xml:20:22-64
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Administrator\.android\build-cache\cde7402d718c21af8698eb5e228e28282f0b80c2\output\AndroidManifest.xml:20:22-64
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Seo\.android\build-cache\2d1dd49ed1e839bf68c770b35f0840e21f6bb986\output\AndroidManifest.xml:21:5-77
+ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Administrator\.android\build-cache\cde7402d718c21af8698eb5e228e28282f0b80c2\output\AndroidManifest.xml:21:5-77
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Seo\.android\build-cache\2d1dd49ed1e839bf68c770b35f0840e21f6bb986\output\AndroidManifest.xml:21:19-51
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Administrator\.android\build-cache\cde7402d718c21af8698eb5e228e28282f0b80c2\output\AndroidManifest.xml:21:19-51
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Seo\.android\build-cache\2d1dd49ed1e839bf68c770b35f0840e21f6bb986\output\AndroidManifest.xml:21:52-75
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\Administrator\.android\build-cache\cde7402d718c21af8698eb5e228e28282f0b80c2\output\AndroidManifest.xml:21:52-75
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Seo\.android\build-cache\37ec642a9c8296752aa6904d6213cd63da9cb63e\output\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Administrator\.android\build-cache\43ce2b8619ad7164d32e6cf30f26c08c9c1bbe8b\output\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Seo\.android\build-cache\37ec642a9c8296752aa6904d6213cd63da9cb63e\output\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Administrator\.android\build-cache\43ce2b8619ad7164d32e6cf30f26c08c9c1bbe8b\output\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Seo\.android\build-cache\37ec642a9c8296752aa6904d6213cd63da9cb63e\output\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Administrator\.android\build-cache\43ce2b8619ad7164d32e6cf30f26c08c9c1bbe8b\output\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Seo\.android\build-cache\37ec642a9c8296752aa6904d6213cd63da9cb63e\output\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Administrator\.android\build-cache\43ce2b8619ad7164d32e6cf30f26c08c9c1bbe8b\output\AndroidManifest.xml:19:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\Seo\.android\build-cache\2ef70c9bc803a55566e257b3b7907ff01294f5b8\output\AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\Administrator\.android\build-cache\7198f088126c51809e7310b77a087940d34467ca\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\Seo\.android\build-cache\2ef70c9bc803a55566e257b3b7907ff01294f5b8\output\AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\Administrator\.android\build-cache\7198f088126c51809e7310b77a087940d34467ca\output\AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\Seo\.android\build-cache\2ef70c9bc803a55566e257b3b7907ff01294f5b8\output\AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\Administrator\.android\build-cache\7198f088126c51809e7310b77a087940d34467ca\output\AndroidManifest.xml:20:20-65

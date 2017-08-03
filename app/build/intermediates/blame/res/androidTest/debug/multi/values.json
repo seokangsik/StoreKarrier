@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "C:\\Users\\Administrator\\Desktop\\Intern\\HostUI\\StoreKarrier\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\Seo\\.android\\build-cache\\89addbc8240af734627108d6c79f10da7574d5e5\\output\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\fe6c691883c9811c2fa0b1a0acc1758400561d4c\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
