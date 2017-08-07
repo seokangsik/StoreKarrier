@@ -135,6 +135,6 @@
             android:layout_marginBottom="30dp"
             android:background="@color/colorPink"
             android:textColor="@color/colorWhite"
-            android:onClick="onButtonCicked"/>
+            android:onClick="onButtonClicked"/>
     </LinearLayout>
 </ScrollView>
