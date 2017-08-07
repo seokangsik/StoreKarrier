@@ -50,6 +50,12 @@ public class NewHostingActivity extends AppCompatActivity{
         resultIntent.putExtra("zipcode",mladdr);
         resultIntent.putExtra("carrier",crrier);
 
+        resultIntent.putExtra("name",data.getStringExtra("name"));
+        resultIntent.putExtra("desc",data.getStringExtra("desc"));
+        resultIntent.putExtra("min",data.getStringExtra("min"));
+        resultIntent.putExtra("max",data.getStringExtra("max"));
+        resultIntent.putExtra("price",data.getStringExtra("price"));
+
         setResult(COMPLETED_OK,resultIntent);
         finish();
     }

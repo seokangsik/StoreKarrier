@@ -27,6 +27,11 @@ static final int REQUEST_CODE_GET_HOSTING_INFO = 1001;
     String dtils="";
     String mladdr="";
     String crrier="";
+    String name="";
+    String desc="";
+    String min="";
+    String max="";
+    String price="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +50,21 @@ static final int REQUEST_CODE_GET_HOSTING_INFO = 1001;
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
     public void onButtonClicked4HostingMode(View v){
+        Bundle bundle = new Bundle();
         Intent intent = new Intent(getApplicationContext(),HostModeActivity.class);
+        bundle.putString("country",ctry);
+        bundle.putString("city",cty);
+        bundle.putString("region",regin);
+        bundle.putString("road_addr",rdaddr);
+        bundle.putString("details",dtils);
+        bundle.putString("zipcode",mladdr);
+        bundle.putString("carrier",crrier);
+        bundle.putString("name",name);
+        bundle.putString("desc",desc);
+        bundle.putString("min",min);
+        bundle.putString("max",max);
+        bundle.putString("price",price);
+        intent.putExtras(bundle);
         startActivity(intent);
     }
     public void onButtonClicked4NewHosting(View v){
@@ -63,7 +82,13 @@ static final int REQUEST_CODE_GET_HOSTING_INFO = 1001;
            dtils = intent.getStringExtra("details");
            mladdr = intent.getStringExtra("zipcode");
            crrier = intent.getStringExtra("carrier");
+            name = intent.getStringExtra("name");
+            desc = intent.getStringExtra("desc");
+            min = intent.getStringExtra("min");
+            max = intent.getStringExtra("max");
+            price = intent.getStringExtra("price");
         }
+
     }
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {

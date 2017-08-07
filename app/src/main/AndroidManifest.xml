@@ -26,6 +26,8 @@
         <activity android:name=".ReserveActivity"/>
         <activity android:name=".NewHostingActivity"/>
         <activity android:name=".ExplainStorageActivity"/>
+        <activity android:name=".ShowHostingInfoActivity"/>
+        <activity android:name=".ShowExplanainStorage"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBd-FVxno-RdewPOUMeMJ8-Mkno1wqiCnA" />

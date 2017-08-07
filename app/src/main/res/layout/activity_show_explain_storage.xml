@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:textSize="43dp"
-            android:text="보관소에 대해 설명해주세요."
+            android:text="보관소 정보"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -26,14 +26,15 @@
             android:text="보관소에 이름을 붙여주세요"
             android:textSize="20dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"/>
-        <EditText
+            android:layout_marginTop="20dp"
+            />
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:id="@+id/new_storage_storage_name"
-            android:hint="예) 넓은 공간의 창고"/>
+            android:id="@+id/new_storage_storage_name2show"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,13 +42,13 @@
             android:textSize="20dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"/>
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:id="@+id/new_storage_desc_storage"
-            android:hint="예) 유명 관광소에서 가깝습니다."/>
+            android:id="@+id/new_storage_desc_storage2show"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,13 +56,13 @@
             android:textSize="20dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"/>
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:id="@+id/new_storage_least_time"
-            android:hint="예) 1"/>
+            android:id="@+id/new_storage_least_time2show"
+           />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,13 +70,13 @@
             android:textSize="20dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"/>
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:id="@+id/new_storage_max_time"
-            android:hint="예) 24"/>
+            android:id="@+id/new_storage_max_time2show"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,13 +84,13 @@
             android:textSize="20dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"/>
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:id="@+id/new_storage_pricepertime"
-            android:hint="예) 3000"/>
+            android:id="@+id/new_storage_pricepertime2show"
+           />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -118,7 +119,7 @@
             android:layout_marginBottom="30dp"
             android:background="@color/colorPink"
             android:textColor="@color/colorWhite"
-            android:onClick="onClicked"
+            android:onClick="onClick4return"
             />
 
 
