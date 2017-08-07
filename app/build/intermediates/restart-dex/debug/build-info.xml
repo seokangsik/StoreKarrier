@@ -6,37 +6,49 @@
     density="xxxhdpi"
     format="10"
     plugin-version="2.3.1"
-    timestamp="1501598662551"
+    timestamp="1502120062945"
     token="-2233770960705707599"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="473" />
+        duration="846" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="35" />
+        duration="51" />
     <task
         name="verifier"
-        duration="21" />
+        duration="14" />
 
     <artifact
-        location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1501593889238"
+        timestamp="1502118407185"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
@@ -44,16 +56,7 @@
             location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -64,19 +67,13 @@
         <artifact
             location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1501598467055"
+        timestamp="1502119915675"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
@@ -85,15 +82,18 @@
             location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1501598662551"
+        timestamp="1502120062945"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\Seo\Documents\GitHub\StoreKarrier\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
     </build>
 

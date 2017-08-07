@@ -108,21 +108,25 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginRight="20dp"
                         android:layout_gravity="right"
                         android:background="@color/colorPrimaryDark"/>
                 </LinearLayout>
-
-
             </LinearLayout>
+
             <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@color/colorPrimary"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary" />
+
             <fragment
                 android:id="@+id/store_map"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="200dp"
                 class="com.google.android.gms.maps.MapFragment"/>
 
             <LinearLayout
