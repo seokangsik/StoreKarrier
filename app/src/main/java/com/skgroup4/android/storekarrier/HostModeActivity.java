@@ -45,7 +45,8 @@ public class HostModeActivity extends AppCompatActivity {
 
         //storage info setting
         Bundle bundle = getIntent().getExtras();
-       ctry = bundle.getString("country");
+
+        ctry = bundle.getString("country");
         cty = bundle.getString("city");
         regin = bundle.getString("region");
         rdaddr = bundle.getString("road_addr");
@@ -58,6 +59,7 @@ public class HostModeActivity extends AppCompatActivity {
         max= bundle.getString("max");
         price= bundle.getString("price");
         imageuri = bundle.getString("imageuri");
+
 
         //하단 BottomNavigation 설정
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation_host);
@@ -85,6 +87,7 @@ public class HostModeActivity extends AppCompatActivity {
         intent.putExtras(bundle);
         startActivity(intent);
     }
+
     public void onButtonClick4EditInfo(View v){
         Intent intent = new Intent(getApplicationContext(),NewHostingActivity.class);
         startActivityForResult(intent,0);

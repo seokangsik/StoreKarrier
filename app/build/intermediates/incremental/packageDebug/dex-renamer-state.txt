@@ -1,0 +1,7 @@
+#Thu Aug 10 01:30:23 KST 2017
+base.0=C\:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d48fd395520e9f56ac817b02a29fec77bf355525
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_c12f7a06eb35c7fc1f146d362a7de43c1d869c2f\\classes.dex
+base.1=C\:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_c12f7a06eb35c7fc1f146d362a7de43c1d869c2f
+file.0=C\:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d48fd395520e9f56ac817b02a29fec77bf355525\\classes.dex

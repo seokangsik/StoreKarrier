@@ -6,11 +6,13 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.skgroup4.android.storekarrier.R;
+import com.skgroup4.android.storekarrier.RepoHouse;
 import com.skgroup4.android.storekarrier.adpater.StoreAdapter;
 import com.skgroup4.android.storekarrier.item.StoreItem;
 
@@ -29,6 +31,7 @@ public class StoreFragment extends Fragment {
 
     private RecyclerView storeRecyclerView;
     private StoreAdapter storeAdapter;
+    private ArrayList<RepoHouse> storeList;
     private ArrayList<StoreItem> storeItemList;
 
     private RecyclerView.LayoutManager layoutManager;
@@ -55,6 +58,17 @@ public class StoreFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Bundle bundle = getArguments();
+        if(bundle!=null){
+            ArrayList<RepoHouse> storeList = (ArrayList<RepoHouse>) bundle.getSerializable("houseList");
+        }
+
+        if(storeList!=null){
+            for(int i = 0 ; i < storeList.size() ; i++){
+                Log.e( "SENDED HOUSE" ,  "ID " + storeList.get(i).getId() + "AVG " + storeList.get(i).getAvg() + " LATITUDE "
+                        + storeList.get(i).getLatitude() + "LONG " + storeList.get(i).getLongitude());
+            }
+        }
         initData();
     }
     private void initData(){

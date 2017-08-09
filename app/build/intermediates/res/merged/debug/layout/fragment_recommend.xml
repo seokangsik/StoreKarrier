@@ -4,7 +4,9 @@
     android:layout_height="match_parent">
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+           >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -12,26 +14,33 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:paddingTop="8dp">
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:orientation="horizontal"
+                                   >
 
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="보관소"/>
+                                            android:text="보관소"
+                                            android:textStyle="bold"
+                                            android:textSize="20dp"/>
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:orientation="vertical">
                                                 <TextView
+                                                    android:id="@+id/show_all_store_txt"
+                                                    android:layout_marginRight="@dimen/activity_horizontal_margin"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:text="모두 보기"
-                                                    android:layout_gravity="right"/>
+                                                    android:layout_gravity="right|center"
+                                                    android:textSize="15dp"/>
                                         </LinearLayout>
 
                                 </LinearLayout>
@@ -41,6 +50,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="1"
+
                                     >
                                 </android.support.v7.widget.RecyclerView>
                         </LinearLayout>
@@ -51,20 +61,27 @@
                             android:orientation="vertical">
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="8dp">
                                         <TextView
+                                            android:layout_gravity="center"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="장소"/>
+                                            android:text="장소"
+                                            android:textStyle="bold"
+                                            android:textSize="20dp"/>
                                         <LinearLayout
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:orientation="vertical">
                                                 <TextView
+                                                    android:id="@+id/show_all_place_txt"
+                                                    android:layout_marginRight="@dimen/activity_horizontal_margin"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:text="모두 보기"
-                                                    android:layout_gravity="right"/>
+                                                    android:textSize="15dp"
+                                                    android:layout_gravity="right|center"/>
                                         </LinearLayout>
                                 </LinearLayout>
 
@@ -73,6 +90,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="1"
+                                    android:layout_gravity="center"
+
                                     >
                                 </android.support.v7.widget.RecyclerView>
                         </LinearLayout>

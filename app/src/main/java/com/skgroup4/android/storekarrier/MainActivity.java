@@ -75,6 +75,7 @@ static final int REQUEST_CODE_GET_HOSTING_INFO = 1001;
     }
     protected void onActivityResult(int requestCode,int resultCode,Intent intent){
         super.onActivityResult(requestCode,resultCode,intent);
+        EventBus.getInstance().post(ActivityResultEvent.create(requestCode, resultCode, intent));
 
         if(requestCode == REQUEST_CODE_GET_HOSTING_INFO){
            ctry = intent.getStringExtra("country");

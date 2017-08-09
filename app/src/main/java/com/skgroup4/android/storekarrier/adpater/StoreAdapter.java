@@ -23,8 +23,8 @@ import java.util.ArrayList;
 public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> {
 
     private ArrayList<StoreItem> storeItemList;
-    public static final int RECOMMENDCODE = 1001;
-    public static final int STORECODE = 1002;
+    public static final int RECOMMENDCODE = 10001;
+    public static final int STORECODE = 10002;
     private static int typeNumber;
 
     Context mContext;
@@ -82,7 +82,7 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> 
                 //img.setLayoutParams(new LinearLayout.LayoutParams(200,150));
             }
             else if (typeNumber == STORECODE){
-                layout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,1200));
+                layout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT));
                 img.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,700));
             }
         }
