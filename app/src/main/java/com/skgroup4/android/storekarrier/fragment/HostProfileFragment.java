@@ -13,16 +13,17 @@ import com.skgroup4.android.storekarrier.R;
  * Created by Seo on 2017-07-30.
  */
 
-public class HostProfileFragment extends Fragment{
-    public HostProfileFragment(){
+public class HostProfileFragment extends Fragment {
+    public HostProfileFragment() {
 
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_host_profile , container , false);
-        
+        View view = inflater.inflate(R.layout.fragment_host_profile, container, false);
+
         return view;
     }
 }
+

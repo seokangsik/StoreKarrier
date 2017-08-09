@@ -30,18 +30,17 @@ public class ReserveActivity extends AppCompatActivity implements DatePickerDial
     TimePickerDialog startTimePickerDialog;
     TimePickerDialog endTimePickerDialog;
 
-    private int startHour;
-    private int startMinute;
+
+
     private boolean flag;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserve);
-        reserveToolbar = (Toolbar) findViewById(R.id.reserve_toolbar);
-        setSupportActionBar(reserveToolbar);
-        dateLayout = (LinearLayout) findViewById(R.id.set_date_layout);
-        startLayout = (LinearLayout) findViewById(R.id.set_start_layout);
-        endLayout = (LinearLayout) findViewById(R.id.set_end_layout);
+
+        dateLayout = (LinearLayout) findViewById(R.id.reserve_date_layout);
+        startLayout = (LinearLayout) findViewById(R.id.reserve_start_layout);
+        endLayout = (LinearLayout) findViewById(R.id.reserve_end_layout);
         dateText = (TextView) findViewById(R.id.date_text);
         startText = (TextView) findViewById(R.id.start_text);
         endText = (TextView) findViewById(R.id.end_text);
@@ -64,14 +63,14 @@ public class ReserveActivity extends AppCompatActivity implements DatePickerDial
         @Override
         public void onClick(View v) {
             switch(v.getId()){
-                case  R.id.set_date_layout:
+                case  R.id.reserve_date_layout:
                     datePickerDialog.show();
                     break;
-                case R.id.set_start_layout:
+                case R.id.reserve_start_layout:
                     flag = false;
                     startTimePickerDialog.show();
                     break;
-                case R.id.set_end_layout:
+                case R.id.reserve_end_layout:
                     flag = true;
                     endTimePickerDialog.show();
                     break;
@@ -81,16 +80,36 @@ public class ReserveActivity extends AppCompatActivity implements DatePickerDial
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-        dateText.setText(year + " 년  " + month + " 월 " + dayOfMonth + " 일 ");
+        dateText.setText("날짜 : " + year + "년 " + month + "월 " + dayOfMonth + "일 ");
     }
 
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+        String am_pm;
+        String hour;
+        String min;
+        if(hourOfDay < 12){
+            am_pm = "AM";
+        }else{
+            am_pm = "PM";
+        }
+
+        if(hourOfDay<10){
+            hour = "0" + hourOfDay;
+        }else{
+            hour = String.valueOf(hourOfDay);
+        }
+        if(minute < 10){
+            min = "0" + minute;
+        }else{
+            min = String.valueOf(minute);
+        }
+
         if(!flag){
-            startText.setText("시작시간 : " + hourOfDay + " 시 " + minute + " 분 ");
+            startText.setText("시작시간 : " + hour + "시 " + min + "분 "+ am_pm);
         }
         else{
-            endText.setText("종료시간 : " + hourOfDay + " 시 " + minute + " 분 ");
+            endText.setText("종료시간 : " + hour + "시 " + min + "분 " + am_pm);
         }
     }
 }

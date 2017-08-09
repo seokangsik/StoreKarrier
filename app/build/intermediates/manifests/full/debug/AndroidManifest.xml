@@ -8,11 +8,12 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="25" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <meta-data
         android:name="android.support.VERSION"
         android:value="25.3.1" /> <!-- Include required permissions for Google Maps API to run. -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -36,8 +37,15 @@
         </activity>
         <activity android:name="com.skgroup4.android.storekarrier.StoreActivity" />
         <activity android:name="com.skgroup4.android.storekarrier.PlaceActivity" />
+        <activity android:name="com.skgroup4.android.storekarrier.SetCarrierNumActivity" />
+        <activity android:name="com.skgroup4.android.storekarrier.SetDateActivity" />
+        <activity android:name="com.skgroup4.android.storekarrier.SetLocationActivity" />
         <activity android:name="com.skgroup4.android.storekarrier.HostModeActivity" />
         <activity android:name="com.skgroup4.android.storekarrier.ReserveActivity" />
+        <activity android:name="com.skgroup4.android.storekarrier.NewHostingActivity" />
+        <activity android:name="com.skgroup4.android.storekarrier.ExplainStorageActivity" />
+        <activity android:name="com.skgroup4.android.storekarrier.ShowHostingInfoActivity" />
+        <activity android:name="com.skgroup4.android.storekarrier.ShowExplanainStorage" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

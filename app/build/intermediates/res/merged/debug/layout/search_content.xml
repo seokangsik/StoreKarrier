@@ -19,7 +19,7 @@
                 android:src="@android:drawable/ic_menu_close_clear_cancel"/>
         </android.support.v7.widget.Toolbar>
         <LinearLayout
-            android:id="@+id/set_location"
+
             android:layout_width="match_parent"
             android:background="@color/colorLightPink"
             android:layout_height="40dp"
@@ -42,7 +42,7 @@
                 android:layout_height="30dp" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/set_date"
+
             android:layout_width="match_parent"
             android:background="@color/colorLightPink"
             android:layout_height="40dp"
@@ -65,7 +65,7 @@
                 android:layout_height="30dp" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/set_carrier"
+
             android:layout_width="match_parent"
             android:background="@color/colorLightPink"
             android:layout_height="40dp"

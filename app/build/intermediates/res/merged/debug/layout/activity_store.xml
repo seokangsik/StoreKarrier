@@ -16,6 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorWhite"
             android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="200dp"
@@ -50,12 +51,13 @@
             <Button
                 android:id="@+id/reserve_btn"
                 android:text="예약하기"
+                android:textColor="@color/colorWhite"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"/>
+                android:background="@color/colorRedtone"/>
         </LinearLayout>
     </LinearLayout>
     <ScrollView
@@ -126,7 +128,7 @@
             <fragment
                 android:id="@+id/store_map"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="250dp"
                 class="com.google.android.gms.maps.MapFragment"/>
 
             <LinearLayout
@@ -156,7 +158,7 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="200dp"
                 />
         </LinearLayout>
 

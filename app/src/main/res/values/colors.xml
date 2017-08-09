@@ -9,4 +9,6 @@
     <color name="transParent">#00000000</color>
     <color name="colorRed">#FF0000</color>
     <color name="colorCrimson">	#DC143C</color>
+    <color name="colorOrange">#FC3D32</color>
+    <color name="colorRedtone">#F42941</color>
 </resources>
