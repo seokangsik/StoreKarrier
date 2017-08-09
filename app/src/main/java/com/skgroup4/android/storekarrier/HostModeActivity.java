@@ -32,6 +32,7 @@ public class HostModeActivity extends AppCompatActivity {
     String min="";
     String max="";
     String price="";
+    String imageuri = "";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +40,7 @@ public class HostModeActivity extends AppCompatActivity {
         //처음 Fragment 생성해서 붙이는 부분
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.host_main_container , new HostProfileFragment());
+        fragmentTransaction.add(R.id.host_main_container , new HostStoreFragment());
         fragmentTransaction.commit();
 
         //storage info setting
@@ -56,6 +57,7 @@ public class HostModeActivity extends AppCompatActivity {
         min= bundle.getString("min");
         max= bundle.getString("max");
         price= bundle.getString("price");
+        imageuri = bundle.getString("imageuri");
 
         //하단 BottomNavigation 설정
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation_host);
@@ -78,6 +80,7 @@ public class HostModeActivity extends AppCompatActivity {
         bundle.putString("min",min);
         bundle.putString("max",max);
         bundle.putString("price",price);
+        bundle.putString("imageuri",imageuri);
 
         intent.putExtras(bundle);
         startActivity(intent);

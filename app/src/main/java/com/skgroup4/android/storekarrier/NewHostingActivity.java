@@ -55,6 +55,7 @@ public class NewHostingActivity extends AppCompatActivity{
         resultIntent.putExtra("min",data.getStringExtra("min"));
         resultIntent.putExtra("max",data.getStringExtra("max"));
         resultIntent.putExtra("price",data.getStringExtra("price"));
+        resultIntent.putExtra("imageuri",data.getStringExtra("imageuri"));
 
         setResult(COMPLETED_OK,resultIntent);
         finish();

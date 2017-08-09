@@ -32,6 +32,7 @@ static final int REQUEST_CODE_GET_HOSTING_INFO = 1001;
     String min="";
     String max="";
     String price="";
+    String imageuri="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +65,7 @@ static final int REQUEST_CODE_GET_HOSTING_INFO = 1001;
         bundle.putString("min",min);
         bundle.putString("max",max);
         bundle.putString("price",price);
+        bundle.putString("imageuri",imageuri);
         intent.putExtras(bundle);
         startActivity(intent);
     }
@@ -87,6 +89,7 @@ static final int REQUEST_CODE_GET_HOSTING_INFO = 1001;
             min = intent.getStringExtra("min");
             max = intent.getStringExtra("max");
             price = intent.getStringExtra("price");
+            imageuri = intent.getStringExtra("imageuri");
         }
 
     }
