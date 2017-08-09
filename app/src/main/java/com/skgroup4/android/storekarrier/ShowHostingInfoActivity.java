@@ -23,6 +23,7 @@ public class ShowHostingInfoActivity extends AppCompatActivity{
     String min="";
     String max="";
     String price="";
+    String imageuri="";
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -42,6 +43,7 @@ public class ShowHostingInfoActivity extends AppCompatActivity{
         min= bundle.getString("min");
         max= bundle.getString("max");
         price= bundle.getString("price");
+        imageuri = bundle.getString("imageuri");
 
         TextView myCountry = (TextView) findViewById(R.id.new_hosting_country2show);
         TextView myCity = (TextView) findViewById(R.id.new_hosting_city2show);
@@ -73,6 +75,7 @@ public class ShowHostingInfoActivity extends AppCompatActivity{
         bundle.putString("min",min);
         bundle.putString("max",max);
         bundle.putString("price",price);
+        bundle.putString("imageuri",imageuri);
         intent.putExtras(bundle);
         startActivityForResult(intent,0);
     }

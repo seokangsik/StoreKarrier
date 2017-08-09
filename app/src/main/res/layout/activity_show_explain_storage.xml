@@ -94,20 +94,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="사진 등록"
+            android:text="사진"
             android:textSize="20dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"/>
-        <Button
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text= "추가하기"
-            android:textSize="15dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="15dp"
-            android:background="@color/colorCrimson"
-            android:textColor="@color/colorWhite"
-            />
+            android:id="@+id/show_loaded_image"/>
+
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

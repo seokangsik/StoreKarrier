@@ -32,6 +32,7 @@ public class HostModeActivity extends AppCompatActivity {
     String min="";
     String max="";
     String price="";
+    String imageuri = "";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,25 +40,25 @@ public class HostModeActivity extends AppCompatActivity {
         //처음 Fragment 생성해서 붙이는 부분
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.host_main_container , new HostProfileFragment());
+        fragmentTransaction.add(R.id.host_main_container , new HostStoreFragment());
         fragmentTransaction.commit();
 
         //storage info setting
         Bundle bundle = getIntent().getExtras();
-        if(bundle!=null){
-            ctry = bundle.getString("country");
-            cty = bundle.getString("city");
-            regin = bundle.getString("region");
-            rdaddr = bundle.getString("road_addr");
-            dtils = bundle.getString("details");
-            mladdr = bundle.getString("zipcode");
-            crrier = bundle.getString("carrier");
-            name= bundle.getString("name");
-            desc= bundle.getString("desc");
-            min= bundle.getString("min");
-            max= bundle.getString("max");
-            price= bundle.getString("price");
-        }
+
+        ctry = bundle.getString("country");
+        cty = bundle.getString("city");
+        regin = bundle.getString("region");
+        rdaddr = bundle.getString("road_addr");
+        dtils = bundle.getString("details");
+        mladdr = bundle.getString("zipcode");
+        crrier = bundle.getString("carrier");
+        name= bundle.getString("name");
+        desc= bundle.getString("desc");
+        min= bundle.getString("min");
+        max= bundle.getString("max");
+        price= bundle.getString("price");
+        imageuri = bundle.getString("imageuri");
 
 
         //하단 BottomNavigation 설정
@@ -81,6 +82,7 @@ public class HostModeActivity extends AppCompatActivity {
         bundle.putString("min",min);
         bundle.putString("max",max);
         bundle.putString("price",price);
+        bundle.putString("imageuri",imageuri);
 
         intent.putExtras(bundle);
         startActivity(intent);

@@ -97,6 +97,11 @@
             android:textSize="20dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Loadedimage"
+            />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -106,6 +111,7 @@
             android:layout_marginTop="15dp"
             android:background="@color/colorCrimson"
             android:textColor="@color/colorWhite"
+            android:onClick="LoadImageFromLocal"
             />
         <Button
             android:layout_width="match_parent"
