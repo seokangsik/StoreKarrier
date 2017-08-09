@@ -11,10 +11,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
         <TextView
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
@@ -28,25 +27,26 @@
             android:src="@drawable/icons_profile"
             android:layout_marginLeft="100dp"
             android:onClick="onButtonClick4info"
+            android:layout_alignParentRight="true"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="22dp"
-            android:layout_marginLeft="20dp"
-            android:text="다른 보관소 등록하기"/>
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/icons_message"
-            android:layout_marginLeft="100dp"
-            android:onClick="onButtonClick4EditInfo"
-            />
-    </LinearLayout>
+    </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_marginTop="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="22dp"
+           android:layout_marginLeft="20dp"
+           android:text="다른 보관소 등록하기"/>
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/icons_message"
+           android:layout_marginLeft="100dp"
+           android:onClick="onButtonClick4EditInfo"
+           android:layout_alignParentRight="true"
+           />
+   </RelativeLayout>
 </LinearLayout>
