@@ -3,6 +3,7 @@
     package="com.skgroup4.android.storekarrier">
     
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

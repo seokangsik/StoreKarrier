@@ -7,9 +7,11 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.skgroup4.android.storekarrier.HostModeActivity;
+import com.skgroup4.android.storekarrier.NewHostingActivity;
 import com.skgroup4.android.storekarrier.R;
 
 /**
@@ -25,12 +27,22 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
-        layout = (LinearLayout) view.findViewById(R.id.host_mode_layout);
 
-        layout.setOnClickListener(mListener);
+        Button buttton = (Button) view.findViewById(R.id.newhosting_button);
+       // Button button = (Button) view.findViewById(R.id.host_mode_button);
+        //button.setOnClickListener(mListener);
+        buttton.setOnClickListener(kListener);
+
         return view;
     }
-    View.OnClickListener mListener = new View.OnClickListener() {
+    private View.OnClickListener kListener = new View.OnClickListener(){
+        @Override
+        public void onClick(View v){
+           Intent intent = new Intent(getActivity(), NewHostingActivity.class);
+            startActivity(intent);
+        }
+    };
+    private View.OnClickListener mListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getActivity(), HostModeActivity.class);

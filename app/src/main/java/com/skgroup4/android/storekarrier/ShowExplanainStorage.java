@@ -41,10 +41,10 @@ public class ShowExplanainStorage extends AppCompatActivity {
         TextView storage_max_time = (TextView) findViewById(R.id.new_storage_max_time2show);
         TextView storage_payment_info = (TextView) findViewById(R.id.new_storage_pricepertime2show);
         ImageView storage_picture = (ImageView) findViewById(R.id.show_loaded_image);
-
-   /*     try {
-          //  Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(),image);
-          //  storage_picture.setImageBitmap(bitmap);
+/*
+        try {
+           Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(),image);
+           storage_picture.setImageBitmap(bitmap);
 
         } catch (IOException e) {
             e.printStackTrace();

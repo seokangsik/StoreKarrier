@@ -44,21 +44,26 @@ public class HostModeActivity extends AppCompatActivity {
         fragmentTransaction.commit();
 
         //storage info setting
-        Bundle bundle = getIntent().getExtras();
+        try {
+            Bundle bundle = getIntent().getExtras();
 
-        ctry = bundle.getString("country");
-        cty = bundle.getString("city");
-        regin = bundle.getString("region");
-        rdaddr = bundle.getString("road_addr");
-        dtils = bundle.getString("details");
-        mladdr = bundle.getString("zipcode");
-        crrier = bundle.getString("carrier");
-        name= bundle.getString("name");
-        desc= bundle.getString("desc");
-        min= bundle.getString("min");
-        max= bundle.getString("max");
-        price= bundle.getString("price");
-        imageuri = bundle.getString("imageuri");
+            ctry = bundle.getString("country");
+            cty = bundle.getString("city");
+            regin = bundle.getString("region");
+            rdaddr = bundle.getString("road_addr");
+            dtils = bundle.getString("details");
+            mladdr = bundle.getString("zipcode");
+            crrier = bundle.getString("carrier");
+            name = bundle.getString("name");
+            desc = bundle.getString("desc");
+            min = bundle.getString("min");
+            max = bundle.getString("max");
+            price = bundle.getString("price");
+            imageuri = bundle.getString("imageuri");
+        }
+        catch(Exception e){
+
+        }
 
 
         //하단 BottomNavigation 설정
@@ -92,7 +97,7 @@ public class HostModeActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),NewHostingActivity.class);
         startActivityForResult(intent,0);
     }
-    protected void onActivityResult(int requestCode,int resultCode,Intent intent){
+/*    protected void onActivityResult(int requestCode,int resultCode,Intent intent){
         super.onActivityResult(requestCode,resultCode,intent);
 
         if(requestCode == 0){
@@ -105,7 +110,7 @@ public class HostModeActivity extends AppCompatActivity {
             crrier = intent.getStringExtra("carrier");
         }
 
-    }
+    }*/
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
