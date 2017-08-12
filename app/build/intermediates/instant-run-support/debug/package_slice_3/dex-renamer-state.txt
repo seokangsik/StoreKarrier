@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Sat Aug 12 13:03:33 KST 2017
 base.0=C\:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_3
+=======
+#Fri Aug 11 10:26:43 KST 2017
+base.0=C\:\\Users\\Administrator\\Desktop\\Intern\\HostUI\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_3
+>>>>>>> 407166731b2b3550e6011317870abf1f98c3f5cf
 renamed.0=classes.dex
-file.0=C\:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_3\\classes.dex
+file.0=C\:\\Users\\Administrator\\Desktop\\Intern\\HostUI\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_3\\classes.dex

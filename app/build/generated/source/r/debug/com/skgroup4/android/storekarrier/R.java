@@ -3043,9 +3043,8 @@ containing a value of this type.
         public static final int fixed=0x7f0d0049;
         public static final int home=0x7f0d0004;
         public static final int homeAsUp=0x7f0d0013;
-        public static final int host_layout=0x7f0d00c2;
         public static final int host_main_container=0x7f0d0083;
-        public static final int host_mode_layout=0x7f0d00c3;
+        public static final int host_mode_button=0x7f0d00c0;
         public static final int hybrid=0x7f0d003c;
         public static final int icon=0x7f0d0053;
         public static final int icon_group=0x7f0d00ef;
@@ -3107,6 +3106,7 @@ containing a value of this type.
         public static final int new_storage_pricepertime2show=0x7f0d00a3;
         public static final int new_storage_storage_name=0x7f0d007d;
         public static final int new_storage_storage_name2show=0x7f0d009f;
+        public static final int newhosting_button=0x7f0d00bf;
         public static final int none=0x7f0d0014;
         public static final int normal=0x7f0d0010;
         public static final int notification_background=0x7f0d00ec;
