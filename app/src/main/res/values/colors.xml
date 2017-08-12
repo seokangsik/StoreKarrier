@@ -6,6 +6,7 @@
     <color name="colorPink">#dc5554</color>
     <color name="colorLightPink">#e37776</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorBlueGray">#607D8B</color>
     <color name="transParent">#00000000</color>
     <color name="colorRed">#FF0000</color>
     <color name="colorCrimson">	#DC143C</color>

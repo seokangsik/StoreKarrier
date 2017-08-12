@@ -23,16 +23,17 @@ import java.util.ArrayList;
 public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> {
 
     private ArrayList<StoreItem> storeItemList;
-    public static final int RECOMMENDCODE = 10001;
-    public static final int STORECODE = 10002;
-    private static int typeNumber;
+    public static final int RECOMMEND_CODE = 10001;
+    public static final int STORE_CODE = 10002;
+
+    private static int code;
 
     Context mContext;
 
-    public StoreAdapter(Context context , ArrayList<StoreItem> items , int  typeNumber){
+    public StoreAdapter(Context context , ArrayList<StoreItem> items , int  code){
         mContext = context;
         this.storeItemList = items;
-        this.typeNumber = typeNumber;
+        this.code = code;
     }
     @Override
     public StoreAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
@@ -78,10 +79,10 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> 
             textPrice = (TextView) itemView.findViewById(R.id.store_price_txt);
             textName = (TextView) itemView.findViewById(R.id.store_name_txt);
             layout = (LinearLayout) itemView.findViewById(R.id.store_item_layout);
-            if(typeNumber == RECOMMENDCODE){
+            if(code == RECOMMEND_CODE){
                 //img.setLayoutParams(new LinearLayout.LayoutParams(200,150));
             }
-            else if (typeNumber == STORECODE){
+            else if (code == STORE_CODE){
                 layout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT));
                 img.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,700));
             }

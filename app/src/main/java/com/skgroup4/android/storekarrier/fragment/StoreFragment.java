@@ -12,13 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.skgroup4.android.storekarrier.R;
-import com.skgroup4.android.storekarrier.RepoHouse;
+import com.skgroup4.android.storekarrier.item.RepoHouse;
 import com.skgroup4.android.storekarrier.adpater.StoreAdapter;
 import com.skgroup4.android.storekarrier.item.StoreItem;
 
 import java.util.ArrayList;
 
-import static com.skgroup4.android.storekarrier.adpater.StoreAdapter.STORECODE;
+import static com.skgroup4.android.storekarrier.adpater.StoreAdapter.STORE_CODE;
 
 /**
  * Created by Seo on 2017-07-18.
@@ -31,7 +31,7 @@ public class StoreFragment extends Fragment {
 
     private RecyclerView storeRecyclerView;
     private StoreAdapter storeAdapter;
-    private ArrayList<RepoHouse> storeList;
+    private ArrayList<RepoHouse> houseList;
     private ArrayList<StoreItem> storeItemList;
 
     private RecyclerView.LayoutManager layoutManager;
@@ -45,7 +45,7 @@ public class StoreFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity() , LinearLayoutManager.VERTICAL,false);
         storeRecyclerView.setLayoutManager(layoutManager);
         storeRecyclerView.scrollToPosition(0);
-        storeAdapter = new StoreAdapter(getActivity(),storeItemList, STORECODE);
+        storeAdapter = new StoreAdapter(getActivity(),storeItemList, STORE_CODE);
         storeRecyclerView.setAdapter(storeAdapter);
         storeRecyclerView.setItemAnimator(new DefaultItemAnimator());
         return view;
@@ -60,13 +60,15 @@ public class StoreFragment extends Fragment {
         super.onCreate(savedInstanceState);
         Bundle bundle = getArguments();
         if(bundle!=null){
-            ArrayList<RepoHouse> storeList = (ArrayList<RepoHouse>) bundle.getSerializable("houseList");
+            ArrayList<RepoHouse> houseList = (ArrayList<RepoHouse>) bundle.getSerializable("houseList");
         }
 
-        if(storeList!=null){
-            for(int i = 0 ; i < storeList.size() ; i++){
-                Log.e( "SENDED HOUSE" ,  "ID " + storeList.get(i).getId() + "AVG " + storeList.get(i).getAvg() + " LATITUDE "
-                        + storeList.get(i).getLatitude() + "LONG " + storeList.get(i).getLongitude());
+        if(houseList!=null){
+            for(int i = 0 ; i < houseList.size() ; i++){
+                Log.e( "HOUSE" ,  "HostName " + houseList.get(i).getHostName() + " , HostImg " + houseList.get(i).getHostImg()  +
+                        " , HostTel" + houseList.get(i).getHostTel() + " , HouseImg" + houseList.get(i).getHouseImg() +
+                        " , LATITUDE " + houseList.get(i).getLatitude() + " , LONG " + houseList.get(i).getLongitude()
+                        + " , AVG" + houseList.get(i).getAvg() + " , Price" + houseList.get(i).getPrice());
             }
         }
         initData();

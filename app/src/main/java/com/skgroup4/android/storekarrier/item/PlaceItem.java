@@ -6,12 +6,11 @@ package com.skgroup4.android.storekarrier.item;
 
 public class PlaceItem {
     public int img;
-    public String price;
+
     public String name;
 
-    public PlaceItem(int img, String price, String name){
+    public PlaceItem(int img,  String name){
         this.img = img;
-        this.price = price;
         this.name = name;
     }
 }

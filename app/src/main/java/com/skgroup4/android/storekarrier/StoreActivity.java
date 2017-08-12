@@ -4,15 +4,25 @@ import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.skgroup4.android.storekarrier.adpater.PlaceAdapter;
+import com.skgroup4.android.storekarrier.item.PlaceItem;
+
+import java.util.ArrayList;
+
+import static com.skgroup4.android.storekarrier.adpater.StoreAdapter.RECOMMEND_CODE;
 
 /**
  * Created by Seo on 2017-07-27.
@@ -24,6 +34,10 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
     private LinearLayout message;
     private Button reserveBtn;
     private LinearLayout storeToolbar;
+    private RecyclerView placeRecyclerView;
+    private LinearLayoutManager layoutManager;
+    private PlaceAdapter placeAdapter;
+    private ArrayList<PlaceItem> placeItemList;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +49,16 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
                 .findFragmentById(R.id.store_map);
         mapFragment.getMapAsync(this);
 
+        initData();
 
+        placeRecyclerView = (RecyclerView) findViewById(R.id.recommend_place_list);
+        placeRecyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
+        placeRecyclerView.setLayoutManager(layoutManager);
+        placeRecyclerView.scrollToPosition(0);
+        placeAdapter = new PlaceAdapter(this , placeItemList ,RECOMMEND_CODE);
+        placeRecyclerView.setAdapter(placeAdapter);
+        placeRecyclerView.setItemAnimator(new DefaultItemAnimator());
 
 
         message =(LinearLayout) findViewById(R.id.message_layout);
@@ -57,8 +80,9 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
         markerOptions.snippet("한국의 수도");
         map.addMarker(markerOptions);
 
-//        map.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
-//        map.animateCamera(CameraUpdateFactory.zoomTo(10));
+       map.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
+        map.animateCamera(CameraUpdateFactory.zoomTo(10));
+
     }
     public View.OnClickListener BtnClickListener = new View.OnClickListener() {
         @Override
@@ -66,8 +90,8 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
             Intent intent;
             switch (v.getId()){
                 case R.id.message_layout:
-                    intent = new Intent(getApplicationContext() , ReserveActivity.class);
-                    startActivity(intent);
+//                    intent = new Intent(getApplicationContext() , ReserveActivity.class);
+//                    startActivity(intent);
                     break;
                 case R.id.reserve_btn:
                     intent = new Intent(getApplicationContext(), ReserveActivity.class);
@@ -77,4 +101,13 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
 
         }
     };
+    private void initData(){
+        //장소 임시데이터
+        placeItemList = new ArrayList<>();
+        placeItemList.add(new PlaceItem(R.drawable.default_img, "name"));
+        placeItemList.add(new PlaceItem(R.drawable.default_img, "name2"));
+        placeItemList.add(new PlaceItem(R.drawable.default_img, "name2"));
+        placeItemList.add(new PlaceItem(R.drawable.default_img, "name2"));
+        placeItemList.add(new PlaceItem(R.drawable.default_img,"name2"));
+    }
 }

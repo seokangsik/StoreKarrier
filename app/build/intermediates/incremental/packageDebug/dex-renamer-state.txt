@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+#Sat Aug 12 14:21:51 KST 2017
+base.0=C\:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d48fd395520e9f56ac817b02a29fec77bf355525
+=======
 #Fri Aug 11 13:51:58 KST 2017
 base.0=C\:\\Users\\Administrator\\Desktop\\Intern\\HostUI\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_715cbe245138fe92d83e4686104307804c91ccac
+>>>>>>> 407166731b2b3550e6011317870abf1f98c3f5cf
 renamed.1=classes2.dex
 renamed.0=classes.dex
 file.1=C\:\\Users\\Administrator\\Desktop\\Intern\\HostUI\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_64de16189c248e2205292f3a7f4873c480fc4c4a\\classes.dex

@@ -44,8 +44,10 @@ public class HostModeActivity extends AppCompatActivity {
         fragmentTransaction.commit();
 
         //storage info setting
+
         try {
             Bundle bundle = getIntent().getExtras();
+
 
             ctry = bundle.getString("country");
             cty = bundle.getString("city");
@@ -54,6 +56,7 @@ public class HostModeActivity extends AppCompatActivity {
             dtils = bundle.getString("details");
             mladdr = bundle.getString("zipcode");
             crrier = bundle.getString("carrier");
+
             name = bundle.getString("name");
             desc = bundle.getString("desc");
             min = bundle.getString("min");
@@ -64,6 +67,7 @@ public class HostModeActivity extends AppCompatActivity {
         catch(Exception e){
 
         }
+
 
 
         //하단 BottomNavigation 설정
