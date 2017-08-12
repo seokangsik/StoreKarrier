@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:background="@drawable/default_img"/>
             <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:textSize="40dp"
+                android:textColor="@color/colorDimGray"
                 android:paddingLeft="20dp"
                 android:textStyle="bold"
                 android:text="Hang Out"/>
@@ -26,62 +31,22 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
                 android:textSize="20dp"
+                android:textColor="@color/colorDimGray"
                 android:text="장소 설명부분"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="20dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:text="Host : "/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:textColor="@color/colorCrimson"
-                    android:text="Name"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:text="님"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_gravity="right"
-                        android:background="@color/colorPrimaryDark"/>
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="20dp">
 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingLeft="20dp">
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-
-                    android:textSize="20dp"
-                    android:text="장소 설명부분"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:paddingLeft="20dp">
-                <TextView
+                    android:layout_marginBottom="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="위치"
                     android:textSize="20dp"
+                    android:textColor="@color/colorDimGray"
                     android:layout_gravity="center"/>
 
             </LinearLayout>
@@ -92,4 +57,4 @@
                 class="com.google.android.gms.maps.MapFragment"/>
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+</FrameLayout>

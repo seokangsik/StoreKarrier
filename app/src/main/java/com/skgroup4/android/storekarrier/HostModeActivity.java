@@ -65,7 +65,7 @@ public class HostModeActivity extends AppCompatActivity {
             imageuri = bundle.getString("imageuri");
         }
         catch(Exception e){
-
+            e.printStackTrace();
         }
 
 
@@ -101,7 +101,7 @@ public class HostModeActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),NewHostingActivity.class);
         startActivityForResult(intent,0);
     }
-/*    protected void onActivityResult(int requestCode,int resultCode,Intent intent){
+    protected void onActivityResult(int requestCode,int resultCode,Intent intent){
         super.onActivityResult(requestCode,resultCode,intent);
 
         if(requestCode == 0){
@@ -114,7 +114,7 @@ public class HostModeActivity extends AppCompatActivity {
             crrier = intent.getStringExtra("carrier");
         }
 
-    }*/
+    }
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
