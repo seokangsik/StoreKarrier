@@ -18,7 +18,7 @@ import com.skgroup4.android.storekarrier.item.StoreItem;
 
 import java.util.ArrayList;
 
-import static com.skgroup4.android.storekarrier.adpater.StoreAdapter.STORECODE;
+import static com.skgroup4.android.storekarrier.adpater.StoreAdapter.STORE_CODE;
 
 /**
  * Created by Seo on 2017-07-18.
@@ -45,7 +45,7 @@ public class StoreFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity() , LinearLayoutManager.VERTICAL,false);
         storeRecyclerView.setLayoutManager(layoutManager);
         storeRecyclerView.scrollToPosition(0);
-        storeAdapter = new StoreAdapter(getActivity(),storeItemList, STORECODE);
+        storeAdapter = new StoreAdapter(getActivity(),storeItemList, STORE_CODE);
         storeRecyclerView.setAdapter(storeAdapter);
         storeRecyclerView.setItemAnimator(new DefaultItemAnimator());
         return view;

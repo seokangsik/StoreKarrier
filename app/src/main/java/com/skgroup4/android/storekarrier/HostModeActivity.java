@@ -45,20 +45,22 @@ public class HostModeActivity extends AppCompatActivity {
 
         //storage info setting
         Bundle bundle = getIntent().getExtras();
+        if(bundle!=null){
+            ctry = bundle.getString("country");
+            cty = bundle.getString("city");
+            regin = bundle.getString("region");
+            rdaddr = bundle.getString("road_addr");
+            dtils = bundle.getString("details");
+            mladdr = bundle.getString("zipcode");
+            crrier = bundle.getString("carrier");
+            name= bundle.getString("name");
+            desc= bundle.getString("desc");
+            min= bundle.getString("min");
+            max= bundle.getString("max");
+            price= bundle.getString("price");
+            imageuri = bundle.getString("imageuri");
+        }
 
-        ctry = bundle.getString("country");
-        cty = bundle.getString("city");
-        regin = bundle.getString("region");
-        rdaddr = bundle.getString("road_addr");
-        dtils = bundle.getString("details");
-        mladdr = bundle.getString("zipcode");
-        crrier = bundle.getString("carrier");
-        name= bundle.getString("name");
-        desc= bundle.getString("desc");
-        min= bundle.getString("min");
-        max= bundle.getString("max");
-        price= bundle.getString("price");
-        imageuri = bundle.getString("imageuri");
 
 
         //하단 BottomNavigation 설정

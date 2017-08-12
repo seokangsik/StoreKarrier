@@ -29,16 +29,9 @@ import com.skgroup4.android.storekarrier.SetLocationActivity;
 import com.squareup.otto.Subscribe;
 
 import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
-import okhttp3.ResponseBody;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 import retrofit2.Retrofit;
 
 /**
@@ -49,6 +42,7 @@ public class SearchFragment extends Fragment {
     public SearchFragment(){
 
     }
+
 
     public static final int REQ_LOC_CODE = 10003;
     public static final int REQ_DATE_CODE = 10004;
@@ -197,40 +191,40 @@ public class SearchFragment extends Fragment {
                     mainLocationText.setText(locationString);
                     subLocationText.setText(locationString);
 
-                    Call<ResponseBody> location = getHouse.getLocation("lee", "37.366139", "127.106470");
-                    location.enqueue(new Callback<ResponseBody>() {
-
-                        @Override
-                        public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                            try {
-                                String result = response.body().string();
-                                Log.d("Test" , result);
-                                dataArray = new JSONArray(result.toString());
-                                for(int i = 0 ;i < dataArray.length() ; i++){
-                                    JSONObject jsonObject = dataArray.getJSONObject(i);
-                                    RepoHouse tmpRepo = new RepoHouse();
-                                    tmpRepo.setId(jsonObject.getString("ID"));
-                                    tmpRepo.setAvg(jsonObject.getString("AVG"));
-                                    tmpRepo.setLatitude(jsonObject.getString("LAT"));
-                                    tmpRepo.setLongitude(jsonObject.getString("LONG"));
-                                    houseList.add(tmpRepo);
-                                }
-                                for(int i = 0 ; i< houseList.size() ; i++){
-                                    Log.e( "HOUSE" ,  "ID " + houseList.get(i).getId() + "AVG " + houseList.get(i).getAvg() + " LATITUDE "
-                                            + houseList.get(i).getLatitude() + "LONG " + houseList.get(i).getLongitude());
-                                }
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                        }
-
-                        @Override
-                        public void onFailure(Call<ResponseBody> call, Throwable t) {
-
-                        }
-                    });
+//                    Call<ResponseBody> location = getHouse.getLocation("lee", "37.366139", "127.106470");
+//                    location.enqueue(new Callback<ResponseBody>() {
+//
+//                        @Override
+//                        public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+//                            try {
+//                                String result = response.body().string();
+//                                Log.d("Test" , result);
+//                                dataArray = new JSONArray(result.toString());
+//                                for(int i = 0 ;i < dataArray.length() ; i++){
+//                                    JSONObject jsonObject = dataArray.getJSONObject(i);
+//                                    RepoHouse tmpRepo = new RepoHouse();
+//                                    tmpRepo.setId(jsonObject.getString("ID"));
+//                                    tmpRepo.setAvg(jsonObject.getString("AVG"));
+//                                    tmpRepo.setLatitude(jsonObject.getString("LAT"));
+//                                    tmpRepo.setLongitude(jsonObject.getString("LONG"));
+//                                    houseList.add(tmpRepo);
+//                                }
+//                                for(int i = 0 ; i< houseList.size() ; i++){
+//                                    Log.e( "HOUSE" ,  "ID " + houseList.get(i).getId() + "AVG " + houseList.get(i).getAvg() + " LATITUDE "
+//                                            + houseList.get(i).getLatitude() + "LONG " + houseList.get(i).getLongitude());
+//                                }
+//                            } catch (IOException e) {
+//                                e.printStackTrace();
+//                            } catch (JSONException e) {
+//                                e.printStackTrace();
+//                            }
+//                        }
+//
+//                        @Override
+//                        public void onFailure(Call<ResponseBody> call, Throwable t) {
+//
+//                        }
+//                    });
                 }
                 break;
             case REQ_DATE_CODE:

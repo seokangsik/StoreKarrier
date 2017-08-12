@@ -21,7 +21,7 @@ import com.skgroup4.android.storekarrier.item.StoreItem;
 
 import java.util.ArrayList;
 
-import static com.skgroup4.android.storekarrier.adpater.StoreAdapter.RECOMMENDCODE;
+import static com.skgroup4.android.storekarrier.adpater.StoreAdapter.RECOMMEND_CODE;
 
 /**
  * Created by Seo on 2017-07-18.
@@ -60,7 +60,7 @@ public class RecommendFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity() , LinearLayoutManager.HORIZONTAL,false);
         storeRecyclerView.setLayoutManager(layoutManager);
         storeRecyclerView.scrollToPosition(0);
-        storeAdapter = new StoreAdapter(getActivity(),storeItemList,RECOMMENDCODE);
+        storeAdapter = new StoreAdapter(getActivity(),storeItemList,RECOMMEND_CODE);
         storeRecyclerView.setAdapter(storeAdapter);
         storeRecyclerView.setItemAnimator(new DefaultItemAnimator());
 
@@ -70,7 +70,7 @@ public class RecommendFragment extends Fragment {
         layoutManager2 = new LinearLayoutManager(getActivity() , LinearLayoutManager.HORIZONTAL,false);
         placeRecyclerView.setLayoutManager(layoutManager2);
         placeRecyclerView.scrollToPosition(0);
-        placeAdapter = new PlaceAdapter(getActivity() , placeItemList );
+        placeAdapter = new PlaceAdapter(getActivity() , placeItemList ,RECOMMEND_CODE);
         placeRecyclerView.setAdapter(placeAdapter);
         placeRecyclerView.setItemAnimator(new DefaultItemAnimator());
 

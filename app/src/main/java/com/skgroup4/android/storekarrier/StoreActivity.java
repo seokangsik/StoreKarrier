@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -57,8 +58,9 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
         markerOptions.snippet("한국의 수도");
         map.addMarker(markerOptions);
 
-//        map.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
-//        map.animateCamera(CameraUpdateFactory.zoomTo(10));
+       map.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
+        map.animateCamera(CameraUpdateFactory.zoomTo(10));
+
     }
     public View.OnClickListener BtnClickListener = new View.OnClickListener() {
         @Override

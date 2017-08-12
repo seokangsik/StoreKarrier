@@ -40,7 +40,7 @@ public class PlaceFragment extends Fragment {
         layoutManager = new GridLayoutManager(getActivity() , 2);
         placeRecyclerView.setLayoutManager(layoutManager);
         placeRecyclerView.scrollToPosition(0);
-        placeAdapter = new PlaceAdapter(getActivity(),placeItemsList);
+        placeAdapter = new PlaceAdapter(getActivity(),placeItemsList , 10003);
         placeRecyclerView.setAdapter(placeAdapter);
         placeRecyclerView.setItemAnimator(new DefaultItemAnimator());
         return view;
