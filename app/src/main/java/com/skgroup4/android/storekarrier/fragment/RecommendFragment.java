@@ -95,8 +95,8 @@ public class RecommendFragment extends Fragment {
 
         //장소 임시데이터
         placeItemList = new ArrayList<>();
-        placeItemList.add(new PlaceItem(R.drawable.default_img,"price" , "name"));
-        placeItemList.add(new PlaceItem(R.drawable.default_img,"price2" , "name2"));
+        placeItemList.add(new PlaceItem(R.drawable.default_img,"name"));
+        placeItemList.add(new PlaceItem(R.drawable.default_img, "name2"));
     }
     View.OnClickListener BtnListener = new View.OnClickListener() {
         @Override

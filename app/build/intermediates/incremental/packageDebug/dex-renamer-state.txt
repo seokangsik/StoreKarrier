@@ -1,4 +1,4 @@
-#Thu Aug 10 23:14:54 KST 2017
+#Sat Aug 12 13:10:21 KST 2017
 base.0=C\:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d48fd395520e9f56ac817b02a29fec77bf355525
 renamed.1=classes2.dex
 renamed.0=classes.dex

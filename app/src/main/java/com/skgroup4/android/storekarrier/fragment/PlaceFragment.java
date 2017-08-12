@@ -59,10 +59,10 @@ public class PlaceFragment extends Fragment {
 
     private void initData(){
         placeItemsList = new ArrayList<>();
-        placeItemsList.add(new PlaceItem(R.drawable.default_img,"price" , "name"));
-        placeItemsList.add(new PlaceItem(R.drawable.default_img,"price2" , "name2"));
-        placeItemsList.add(new PlaceItem(R.drawable.default_img,"price3" , "name3"));
-        placeItemsList.add(new PlaceItem(R.drawable.default_img,"price4" , "name4"));
+        placeItemsList.add(new PlaceItem(R.drawable.default_img, "name"));
+        placeItemsList.add(new PlaceItem(R.drawable.default_img , "name2"));
+        placeItemsList.add(new PlaceItem(R.drawable.default_img, "name3"));
+        placeItemsList.add(new PlaceItem(R.drawable.default_img, "name4"));
     }
 
 
