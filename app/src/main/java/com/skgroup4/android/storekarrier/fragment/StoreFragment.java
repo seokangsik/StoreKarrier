@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.skgroup4.android.storekarrier.R;
+import com.skgroup4.android.storekarrier.SpacesItemDecoration;
 import com.skgroup4.android.storekarrier.item.RepoHouse;
 import com.skgroup4.android.storekarrier.adpater.StoreAdapter;
 import com.skgroup4.android.storekarrier.item.StoreItem;
@@ -45,6 +46,7 @@ public class StoreFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity() , LinearLayoutManager.VERTICAL,false);
         storeRecyclerView.setLayoutManager(layoutManager);
         storeRecyclerView.scrollToPosition(0);
+        storeRecyclerView.addItemDecoration(new SpacesItemDecoration(20));
         storeAdapter = new StoreAdapter(getActivity(),storeItemList, STORE_CODE);
         storeRecyclerView.setAdapter(storeAdapter);
         storeRecyclerView.setItemAnimator(new DefaultItemAnimator());

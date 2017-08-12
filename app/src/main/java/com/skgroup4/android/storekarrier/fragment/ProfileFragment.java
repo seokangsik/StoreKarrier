@@ -29,8 +29,8 @@ public class ProfileFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
         Button buttton = (Button) view.findViewById(R.id.newhosting_button);
-       // Button button = (Button) view.findViewById(R.id.host_mode_button);
-        //button.setOnClickListener(mListener);
+        Button button = (Button) view.findViewById(R.id.host_mode_button);
+        button.setOnClickListener(mListener);
         buttton.setOnClickListener(kListener);
 
         return view;

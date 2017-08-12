@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.skgroup4.android.storekarrier.R;
+import com.skgroup4.android.storekarrier.SpacesItemDecoration;
 import com.skgroup4.android.storekarrier.adpater.PlaceAdapter;
 import com.skgroup4.android.storekarrier.item.PlaceItem;
 
@@ -40,7 +41,8 @@ public class PlaceFragment extends Fragment {
         layoutManager = new GridLayoutManager(getActivity() , 2);
         placeRecyclerView.setLayoutManager(layoutManager);
         placeRecyclerView.scrollToPosition(0);
-        placeAdapter = new PlaceAdapter(getActivity(),placeItemsList , 10003);
+        placeAdapter = new PlaceAdapter(getActivity(),placeItemsList , PlaceAdapter.PLACE_CODE);
+        placeRecyclerView.addItemDecoration(new SpacesItemDecoration(20));
         placeRecyclerView.setAdapter(placeAdapter);
         placeRecyclerView.setItemAnimator(new DefaultItemAnimator());
         return view;
