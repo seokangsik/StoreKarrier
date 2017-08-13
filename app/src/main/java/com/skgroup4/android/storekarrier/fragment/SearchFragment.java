@@ -143,7 +143,7 @@ public class SearchFragment extends Fragment {
         //처음 검색 Fragment에 추천 Fragment 붙이기
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.search_container, new RecommendFragment());
+        fragmentTransaction.add(R.id.search_container,new RecommendFragment());
         fragmentTransaction.commit();
 
     }
@@ -169,33 +169,58 @@ public class SearchFragment extends Fragment {
                         bundle1.putSerializable("spotList" , spotList);
                         bundle.putBundle("spotBundle" , bundle1);
                         fragment.setArguments(bundle);
+                        fragmentTransaction.replace(R.id.search_container, fragment , "recommendFragment");
                        // fm.putFragment(bundle, "recommendFragment" , fragment);
                     }
-                    fragmentTransaction.replace(R.id.search_container, fragment);
+                    else{
+                        fragmentTransaction.replace(R.id.search_container, fragment );
+                    }
+
                     fragmentTransaction.commit();
                     break;
                 case R.id.store_btn:
-                    fragment = new StoreFragment();
+                    StoreFragment storeFragment = (StoreFragment) getFragmentManager().findFragmentByTag("storeFragment");
+                    if(storeFragment!=null){
+                        fragment = storeFragment;
+                    }
+                    else{
+                        fragment = new StoreFragment();
+                    }
+
 
                     if (houseList != null) {
                         Bundle bundle = new Bundle();
                         bundle.putSerializable("houseList", houseList);
                         fragment.setArguments(bundle);
                       //  fm.putFragment(bundle , "storeFragment" , fragment);
+                        fragmentTransaction.replace(R.id.search_container, fragment ,"storeFrament");
                     }
-                    fragmentTransaction.replace(R.id.search_container, fragment);
+                    else{
+                        fragmentTransaction.replace(R.id.search_container, fragment );
+                    }
+
                     fragmentTransaction.commit();
                     break;
                 case R.id.place_btn:
-                    fragment = new PlaceFragment();
+                    PlaceFragment placeFragment = (PlaceFragment) getFragmentManager().findFragmentByTag("placeFragment");
+
+                    if(placeFragment!=null){
+                        fragment = placeFragment;
+                    }else{
+                        fragment = new PlaceFragment();
+                    }
 
                     if(spotList!=null) {
                         Bundle bundle = new Bundle();
                         bundle.putSerializable("spotList" , spotList);
                         fragment.setArguments(bundle);
                        // fm.putFragment(bundle, "placeFragment" , fragment);
+                        fragmentTransaction.replace(R.id.search_container, fragment, "placeFragment");
                     }
-                    fragmentTransaction.replace(R.id.search_container, fragment);
+                    else{
+                        fragmentTransaction.replace(R.id.search_container, fragment);
+                    }
+
                     fragmentTransaction.commit();
                     break;
                 case R.id.toolbar:
@@ -302,6 +327,7 @@ public class SearchFragment extends Fragment {
                                     tmpRepo.setLongitude(jsonObject.getString("LONG"));
                                     tmpRepo.setPlaceName(jsonObject.getString("NAME"));
                                     tmpRepo.setPlaceImg(jsonObject.getString("IMG"));
+                                    tmpRepo.setAddress(jsonObject.getString("ADDRESS"));
                                     tmpRepo.setDescription(jsonObject.getString("NOTE"));
                                     tmpRepo.setPoint(jsonObject.getString("PRE"));
                                     spotList.add(tmpRepo);

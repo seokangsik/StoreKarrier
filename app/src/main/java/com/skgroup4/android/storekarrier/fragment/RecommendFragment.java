@@ -142,15 +142,26 @@ public class RecommendFragment extends Fragment {
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
             switch (v.getId()){
                 case R.id.show_all_store_txt:
-                    fragment = new StoreFragment();
+                    StoreFragment storeFragment = ((StoreFragment) getFragmentManager().findFragmentByTag("storeFragment"));
+                    if(storeFragment != null){
+                        fragmentTransaction.replace(R.id.search_container, storeFragment);
+                    }
+                    else{
+                        fragment = new StoreFragment();
+                        fragmentTransaction.replace(R.id.search_container, fragment);
+                    }
                     //fragment = getFragmentManager().getFragment(getArguments() , "storeFragment");
-                    fragmentTransaction.replace(R.id.search_container, fragment);
                     fragmentTransaction.commit();
                     break;
                 case R.id.show_all_place_txt:
-                    fragment = new PlaceFragment();
-                    //fragment = getFragmentManager().getFragment(getArguments(), "placeFragment");
-                    fragmentTransaction.replace(R.id.search_container, fragment);
+                    PlaceFragment placeFragment = (PlaceFragment) getFragmentManager().findFragmentByTag("placeFragment");
+                    if(placeFragment!=null){
+                        fragmentTransaction.replace(R.id.search_container, placeFragment);
+                    }else{
+                        fragment = new PlaceFragment();
+                        fragmentTransaction.replace(R.id.search_container, fragment);
+                    }
+
                     fragmentTransaction.commit();
                     break;
             }

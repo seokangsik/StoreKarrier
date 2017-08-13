@@ -55,6 +55,7 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
     private TextView ratingText;
     private float latitude;
     private float longitude;
+    private String title;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,7 +70,7 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
         hostImg = (ImageView) findViewById(R.id.activity_store_host_img);
         storePrice = (TextView) findViewById(R.id.activity_store_price);
         storeRating = (RatingBar) findViewById(R.id.activity_store_ratingbar) ;
-        ratingText = (TextView) findViewById(R.id.activity_store_star_text) ;
+        ratingText = (TextView) findViewById(R.id.activity_store_rating_text) ;
         //받은 데이터 처리
         Bundle bundle = getIntent().getExtras();
         if(bundle!=null){
@@ -78,13 +79,14 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
             storeName.setText(houseInfo.getHostName() + "의 보관소");
             hostName.setText(houseInfo.getHostName());
             Picasso.with(this).load(houseInfo.getHostImg()).fit().centerCrop().into(hostImg);
-            storePrice.setText(houseInfo.getPrice());
+            storePrice.setText("￦ "+houseInfo.getPrice());
             ratingText.setText(houseInfo.getAvg());
             float starNum = Float.parseFloat(houseInfo.getAvg());
             storeRating.setStepSize((float) 0.5);
             storeRating.setRating(starNum);
             latitude = Float.parseFloat(houseInfo.getLatitude());
             longitude = Float.parseFloat(houseInfo.getLongitude());
+            title = houseInfo.getHostName() + "의 보관소";
         }
 
 
@@ -121,12 +123,12 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
 
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(location);
-//        markerOptions.title("서울");
+        markerOptions.title(title);
 //        markerOptions.snippet("한국의 수도");
         map.addMarker(markerOptions);
 
        map.moveCamera(CameraUpdateFactory.newLatLng(location));
-        map.animateCamera(CameraUpdateFactory.zoomTo(20));
+        map.animateCamera(CameraUpdateFactory.zoomTo(11));
 
     }
     public View.OnClickListener BtnClickListener = new View.OnClickListener() {

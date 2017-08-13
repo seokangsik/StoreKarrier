@@ -131,7 +131,7 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> 
             }
             else if (code == STORE_CODE){
                 layout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT));
-                img.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,850));
+                img.setLayoutParams(new FrameLayout.LayoutParams(1200,850));
 
                 FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(100,100);
                 params.gravity = Gravity.RIGHT;

@@ -52,9 +52,9 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
-        final int itemposition = position;
+        final int itemPosition = position;
         if(dataChecker){
-            RepoSpot item = spotList.get(itemposition);
+            RepoSpot item = spotList.get(itemPosition);
             Picasso.with(mContext).load(item.getPlaceImg()).fit().centerCrop().into(viewHolder.img);
             //viewHolder.img.setBackgroundResource(item.getPlaceImg());
             viewHolder.textName.setText(item.getPlaceName());
@@ -69,6 +69,10 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder>{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mContext , PlaceActivity.class);
+                if(spotList!=null){
+                    RepoSpot item = spotList.get(itemPosition);
+                    intent.putExtra("spotInfo" , item);
+                }
                 mContext.startActivity(intent);
             }
         };
