@@ -1,26 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+        "merged": "C:\\Users\\user\\Documents\\GitHub\\StoreKarrier\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\user\\.android\\build-cache\\a661585d665967c4ece877d1eb29c689d4a4b97d\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
     },
     {
-        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+        "merged": "C:\\Users\\user\\Documents\\GitHub\\StoreKarrier\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\user\\.android\\build-cache\\a661585d665967c4ece877d1eb29c689d4a4b97d\\output\\res\\layout-v11\\notification_media_action.xml"
     },
     {
-        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
-        "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\layout-v11\\notification_media_action.xml"
+        "merged": "C:\\Users\\user\\Documents\\GitHub\\StoreKarrier\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\user\\.android\\build-cache\\a661585d665967c4ece877d1eb29c689d4a4b97d\\output\\res\\layout-v11\\notification_template_big_media.xml"
     },
     {
-        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
-        "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\layout-v11\\notification_template_big_media.xml"
+        "merged": "C:\\Users\\user\\Documents\\GitHub\\StoreKarrier\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\user\\.android\\build-cache\\a661585d665967c4ece877d1eb29c689d4a4b97d\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
     },
     {
-        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+        "merged": "C:\\Users\\user\\Documents\\GitHub\\StoreKarrier\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\user\\.android\\build-cache\\a661585d665967c4ece877d1eb29c689d4a4b97d\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+        "merged": "C:\\Users\\user\\Documents\\GitHub\\StoreKarrier\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\user\\.android\\build-cache\\a661585d665967c4ece877d1eb29c689d4a4b97d\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     }
 ]
