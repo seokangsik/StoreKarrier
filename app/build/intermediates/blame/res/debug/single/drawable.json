@@ -1,11 +1,15 @@
 [
     {
-        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icons8_refresh_48.png",
+        "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\icons8_refresh_48.png"
     },
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
         "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
@@ -14,6 +18,10 @@
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sender2.jpg",
+        "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\sender2.jpg"
     },
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icons_heart.png",
@@ -76,12 +84,12 @@
         "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\drawable\\notification_tile_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_heart2.png",
         "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\icon_heart2.png"
+    },
+    {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_normal.xml",
@@ -98,6 +106,10 @@
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_img.png",
         "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\default_img.png"
+    },
+    {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sender1.jpg",
+        "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\sender1.jpg"
     },
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
@@ -124,8 +136,16 @@
         "source": "C:\\Users\\Seo\\.android\\build-cache\\37ec642a9c8296752aa6904d6213cd63da9cb63e\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icons8_home_48.png",
+        "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\icons8_home_48.png"
+    },
+    {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icons_message.png",
         "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\icons_message.png"
+    },
+    {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icons8_settings_48.png",
+        "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\icons8_settings_48.png"
     },
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
@@ -150,6 +170,10 @@
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
         "source": "C:\\Users\\Seo\\.android\\build-cache\\37ec642a9c8296752aa6904d6213cd63da9cb63e\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sender5.jpg",
+        "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\sender5.jpg"
     },
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
@@ -192,6 +216,10 @@
         "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icons8_back_48.png",
+        "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\icons8_back_48.png"
+    },
+    {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
         "source": "C:\\Users\\Seo\\.android\\build-cache\\1efcdb50af2e8981d48fd1fb0aaa2c4ae384adf1\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
@@ -202,6 +230,10 @@
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
         "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sender4.jpg",
+        "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\sender4.jpg"
     },
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icons_search.png",
@@ -218,6 +250,10 @@
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
         "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icons8_question_mark_48.png",
+        "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\icons8_question_mark_48.png"
     },
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
@@ -250,6 +286,14 @@
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "C:\\Users\\Seo\\.android\\build-cache\\9005e5f99fc30610fed36f474b8d89b27afd9245\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sender3.jpg",
+        "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\sender3.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sender6.jpg",
+        "source": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\src\\main\\res\\drawable\\sender6.jpg"
     },
     {
         "merged": "C:\\Users\\Seo\\Documents\\GitHub\\StoreKarrier\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back.png",

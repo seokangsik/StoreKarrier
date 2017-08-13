@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/store_bottom_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         >
@@ -32,29 +32,44 @@
                     android:paddingLeft="20dp"
                     >
                     <TextView
+                        android:id="@+id/activity_store_price"
                         android:textColor="@color/colorPrimaryDark"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="$5.0"
                         android:textSize="17dp"/>
                     <TextView
+                        android:layout_marginLeft="5dp"
                         android:textColor="@color/colorPrimaryDark"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="/1박"
+                        android:text="/ 1박"
                         android:textSize="17dp"/>
                 </LinearLayout>
-                <RatingBar
-                    android:layout_marginTop="2dp"
-                    android:layout_marginLeft="20dp"
-                    android:id="@+id/ratingbar"
-                    style="?android:attr/ratingBarStyleSmall"
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:transformPivotX="0dp"
-                    android:transformPivotY="0dp"
-                    android:isIndicator="true"
-                    android:max="5" />
+                    android:layout_height="wrap_content">
+                    <RatingBar
+
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/activity_store_ratingbar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="0dp"
+                        android:isIndicator="true"
+                        android:max="5" />
+                    <TextView
+                        android:id="@+id/activity_store_star_text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
             </LinearLayout>
             <Button
 
@@ -78,16 +93,18 @@
 
             android:orientation="vertical">
             <ImageView
+                android:id="@+id/activity_store_img"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:background="@drawable/default_img"
                 />
 
             <TextView
+
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:textColor="@color/colorDimGray"
-                android:id="@+id/textView"
+                android:id="@+id/activity_store_name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:paddingLeft="20dp"
@@ -105,11 +122,12 @@
                     android:textColor="@color/colorDimGray"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+
                     android:paddingLeft="5dp"
                     android:textSize="20dp"
                     android:text="Host : "/>
                 <TextView
+                    android:id="@+id/activity_store_host_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorCrimson"
@@ -126,6 +144,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <ImageView
+                        android:id="@+id/activity_store_host_img"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginRight="20dp"

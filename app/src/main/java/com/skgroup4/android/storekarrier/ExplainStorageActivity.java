@@ -28,7 +28,7 @@ public class ExplainStorageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explain_storage);
     }
-    public void onClicked(View v){
+    public void onButtonClicked(View v){
         Intent resultIntent = new Intent();
 
         EditText name_storage = (EditText) findViewById(R.id.new_storage_storage_name);

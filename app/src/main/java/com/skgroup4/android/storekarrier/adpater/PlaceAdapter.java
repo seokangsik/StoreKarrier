@@ -14,6 +14,8 @@ import android.widget.TextView;
 import com.skgroup4.android.storekarrier.PlaceActivity;
 import com.skgroup4.android.storekarrier.R;
 import com.skgroup4.android.storekarrier.item.PlaceItem;
+import com.skgroup4.android.storekarrier.item.RepoSpot;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -25,6 +27,9 @@ import static com.skgroup4.android.storekarrier.adpater.StoreAdapter.RECOMMEND_C
 
 public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder>{
     private ArrayList<PlaceItem> placeItemList;
+    private ArrayList<RepoSpot> spotList;
+    private boolean dataChecker;
+
     public static final int PLACE_CODE = 10003;
     private static int code;
     Context mContext;
@@ -32,6 +37,12 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder>{
         mContext  = context;
         this.placeItemList = items;
         this.code = code;
+    }
+    public PlaceAdapter(Context context, ArrayList<RepoSpot> items , int code, boolean checker){
+        mContext = context;
+        this.spotList = items;
+        this.code = code;
+        dataChecker = checker;
     }
     @Override
     public PlaceAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
@@ -41,7 +52,19 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
-        PlaceItem item = placeItemList.get(position);
+        final int itemposition = position;
+        if(dataChecker){
+            RepoSpot item = spotList.get(itemposition);
+            Picasso.with(mContext).load(item.getPlaceImg()).fit().centerCrop().into(viewHolder.img);
+            //viewHolder.img.setBackgroundResource(item.getPlaceImg());
+            viewHolder.textName.setText(item.getPlaceName());
+        }
+        else{
+            PlaceItem item = placeItemList.get(position);
+            viewHolder.img.setBackgroundResource(item.img);
+            viewHolder.textName.setText(item.name);
+        }
+
         View.OnClickListener mListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,8 +72,7 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder>{
                 mContext.startActivity(intent);
             }
         };
-        viewHolder.img.setBackgroundResource(item.img);
-        viewHolder.textName.setText(item.name);
+
 
         viewHolder.layout.setOnClickListener(mListener);
     }
@@ -63,7 +85,12 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder>{
 
     @Override
     public int getItemCount() {
-        return placeItemList.size();
+        if(dataChecker){
+            return spotList.size();
+        }else{
+            return placeItemList.size();
+        }
+
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
@@ -84,7 +111,7 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder>{
                 float margin = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, itemView.getResources().getDisplayMetrics());
                 setMargins(layout , (int)margin , 0 , (int)margin , 0);
                 float pixels = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200, itemView.getResources().getDisplayMetrics());
-                img.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, (int)pixels));
+                img.setLayoutParams(new LinearLayout.LayoutParams((int) pixels, (int)pixels));
             }
         }
     }

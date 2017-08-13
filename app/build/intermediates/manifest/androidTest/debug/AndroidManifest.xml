@@ -3,7 +3,7 @@
     package="com.skgroup4.android.storekarrier.test" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="17"
         android:targetSdkVersion="25" />
 
     <instrumentation

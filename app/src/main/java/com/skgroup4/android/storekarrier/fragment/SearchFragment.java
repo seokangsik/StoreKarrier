@@ -67,8 +67,8 @@ public class SearchFragment extends Fragment {
     ArrayList<RepoHouse> houseList;
     ArrayList<RepoSpot> spotList;
     private Button recommendBtn;
-    private Button storeBtn;
-    private Button placeBtn;
+    public Button storeBtn;
+    public Button placeBtn;
     private ImageView collapseBtn;
 
     private TextView mainLocationText;
@@ -161,21 +161,40 @@ public class SearchFragment extends Fragment {
             switch (v.getId()) {
                 case R.id.recommend_btn:
                     fragment = new RecommendFragment();
+
+                    if(houseList!=null && spotList!=null){
+                        Bundle bundle = new Bundle();
+                        bundle.putSerializable("houseList", houseList);
+                        Bundle bundle1 = new Bundle();
+                        bundle1.putSerializable("spotList" , spotList);
+                        bundle.putBundle("spotBundle" , bundle1);
+                        fragment.setArguments(bundle);
+                       // fm.putFragment(bundle, "recommendFragment" , fragment);
+                    }
                     fragmentTransaction.replace(R.id.search_container, fragment);
                     fragmentTransaction.commit();
                     break;
                 case R.id.store_btn:
                     fragment = new StoreFragment();
+
                     if (houseList != null) {
                         Bundle bundle = new Bundle();
                         bundle.putSerializable("houseList", houseList);
                         fragment.setArguments(bundle);
+                      //  fm.putFragment(bundle , "storeFragment" , fragment);
                     }
                     fragmentTransaction.replace(R.id.search_container, fragment);
                     fragmentTransaction.commit();
                     break;
                 case R.id.place_btn:
                     fragment = new PlaceFragment();
+
+                    if(spotList!=null) {
+                        Bundle bundle = new Bundle();
+                        bundle.putSerializable("spotList" , spotList);
+                        fragment.setArguments(bundle);
+                       // fm.putFragment(bundle, "placeFragment" , fragment);
+                    }
                     fragmentTransaction.replace(R.id.search_container, fragment);
                     fragmentTransaction.commit();
                     break;
@@ -223,7 +242,7 @@ public class SearchFragment extends Fragment {
                         spot = getSpot.getSpot("1", "48.856489", "2.352398");
                     } else {
                         house = getHouse.getLocation("1", "41.904365", "12.49346");
-                        spot = getSpot.getSpot("1", "48.856489", "2.352398");
+                        spot = getSpot.getSpot("1", "41.904365", "12.49346");
                     }
                     house.enqueue(new Callback<ResponseBody>() {
 

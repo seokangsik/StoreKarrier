@@ -6,15 +6,14 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.skgroup4.android.storekarrier.R;
 import com.skgroup4.android.storekarrier.SpacesItemDecoration;
-import com.skgroup4.android.storekarrier.item.RepoHouse;
 import com.skgroup4.android.storekarrier.adpater.StoreAdapter;
+import com.skgroup4.android.storekarrier.item.RepoHouse;
 import com.skgroup4.android.storekarrier.item.StoreItem;
 
 import java.util.ArrayList;
@@ -47,7 +46,13 @@ public class StoreFragment extends Fragment {
         storeRecyclerView.setLayoutManager(layoutManager);
         storeRecyclerView.scrollToPosition(0);
         storeRecyclerView.addItemDecoration(new SpacesItemDecoration(20));
-        storeAdapter = new StoreAdapter(getActivity(),storeItemList, STORE_CODE);
+
+        if(houseList!=null){
+            storeAdapter = new StoreAdapter(getActivity() , houseList, STORE_CODE , true);
+        }else{
+            storeAdapter = new StoreAdapter(getActivity(),storeItemList, STORE_CODE);
+        }
+
         storeRecyclerView.setAdapter(storeAdapter);
         storeRecyclerView.setItemAnimator(new DefaultItemAnimator());
         return view;
@@ -62,18 +67,20 @@ public class StoreFragment extends Fragment {
         super.onCreate(savedInstanceState);
         Bundle bundle = getArguments();
         if(bundle!=null){
-            ArrayList<RepoHouse> houseList = (ArrayList<RepoHouse>) bundle.getSerializable("houseList");
+            houseList = (ArrayList<RepoHouse>) bundle.getSerializable("houseList");
+//            if(houseList!=null){
+//                for(int i = 0 ; i < houseList.size() ; i++){
+//                    Log.e( "HOUSE" ,  "HostName " + houseList.get(i).getHostName() + " , HostImg " + houseList.get(i).getHostImg()  +
+//                            " , HostTel" + houseList.get(i).getHostTel() + " , HouseImg" + houseList.get(i).getHouseImg() +
+//                            " , LATITUDE " + houseList.get(i).getLatitude() + " , LONG " + houseList.get(i).getLongitude()
+//                            + " , AVG" + houseList.get(i).getAvg() + " , Price" + houseList.get(i).getPrice());
+//                }
+//            }
+        }
+        else{
+            initData();
         }
 
-        if(houseList!=null){
-            for(int i = 0 ; i < houseList.size() ; i++){
-                Log.e( "HOUSE" ,  "HostName " + houseList.get(i).getHostName() + " , HostImg " + houseList.get(i).getHostImg()  +
-                        " , HostTel" + houseList.get(i).getHostTel() + " , HouseImg" + houseList.get(i).getHouseImg() +
-                        " , LATITUDE " + houseList.get(i).getLatitude() + " , LONG " + houseList.get(i).getLongitude()
-                        + " , AVG" + houseList.get(i).getAvg() + " , Price" + houseList.get(i).getPrice());
-            }
-        }
-        initData();
     }
     private void initData(){
         //보관소 임시 데이터
