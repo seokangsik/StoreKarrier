@@ -9,7 +9,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -19,6 +22,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.skgroup4.android.storekarrier.adpater.PlaceAdapter;
 import com.skgroup4.android.storekarrier.item.PlaceItem;
+import com.skgroup4.android.storekarrier.item.RepoHouse;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -38,12 +43,52 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
     private LinearLayoutManager layoutManager;
     private PlaceAdapter placeAdapter;
     private ArrayList<PlaceItem> placeItemList;
+
+    //info
+    private RepoHouse houseInfo;
+    private ImageView storeImg;
+    private TextView storeName;
+    private TextView hostName;
+    private ImageView hostImg;
+    private TextView storePrice;
+    private RatingBar storeRating;
+    private TextView ratingText;
+    private float latitude;
+    private float longitude;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
+
         storeToolbar = (LinearLayout) findViewById(R.id.store_bottom_toolbar);
         storeToolbar.bringToFront();
+
+        storeImg = (ImageView) findViewById(R.id.activity_store_img);
+        storeName = (TextView) findViewById(R.id.activity_store_name);
+        hostName = (TextView) findViewById(R.id.activity_store_host_name);
+        hostImg = (ImageView) findViewById(R.id.activity_store_host_img);
+        storePrice = (TextView) findViewById(R.id.activity_store_price);
+        storeRating = (RatingBar) findViewById(R.id.activity_store_ratingbar) ;
+        ratingText = (TextView) findViewById(R.id.activity_store_star_text) ;
+        //받은 데이터 처리
+        Bundle bundle = getIntent().getExtras();
+        if(bundle!=null){
+            houseInfo = (RepoHouse) bundle.getSerializable("houseInfo");
+            Picasso.with(this).load(houseInfo.getHouseImg()).fit().centerCrop().into(storeImg);
+            storeName.setText(houseInfo.getHostName() + "의 보관소");
+            hostName.setText(houseInfo.getHostName());
+            Picasso.with(this).load(houseInfo.getHostImg()).fit().centerCrop().into(hostImg);
+            storePrice.setText(houseInfo.getPrice());
+            ratingText.setText(houseInfo.getAvg());
+            float starNum = Float.parseFloat(houseInfo.getAvg());
+            storeRating.setStepSize((float) 0.5);
+            storeRating.setRating(starNum);
+            latitude = Float.parseFloat(houseInfo.getLatitude());
+            longitude = Float.parseFloat(houseInfo.getLongitude());
+        }
+
+
+
         FragmentManager fragmentManager = getFragmentManager();
         MapFragment mapFragment = (MapFragment)fragmentManager
                 .findFragmentById(R.id.store_map);
@@ -72,16 +117,16 @@ public class StoreActivity extends AppCompatActivity implements OnMapReadyCallba
 
     @Override
     public void onMapReady(final GoogleMap map) {
-        LatLng SEOUL = new LatLng(37.56, 126.97);
+        LatLng location = new LatLng(latitude, longitude);
 
         MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.position(SEOUL);
-        markerOptions.title("서울");
-        markerOptions.snippet("한국의 수도");
+        markerOptions.position(location);
+//        markerOptions.title("서울");
+//        markerOptions.snippet("한국의 수도");
         map.addMarker(markerOptions);
 
-       map.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
-        map.animateCamera(CameraUpdateFactory.zoomTo(10));
+       map.moveCamera(CameraUpdateFactory.newLatLng(location));
+        map.animateCamera(CameraUpdateFactory.zoomTo(20));
 
     }
     public View.OnClickListener BtnClickListener = new View.OnClickListener() {

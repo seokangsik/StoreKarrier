@@ -10,21 +10,24 @@ import android.widget.EditText;
  * Created by Administrator on 2017-08-03.
  */
 
-public class NewHostingActivity extends AppCompatActivity{
+public class NewHostingActivity extends AppCompatActivity {
     static final int COMPLETED_OK = 10;
+
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_hosting);
 
 
     }
-    public void onButtonClicked(View v){
-        Intent intent = new Intent(getApplicationContext(), ExplainStorageActivity.class);
-        startActivityForResult(intent,1);
+
+    public void onButtonClicked(View v) {
+        Intent intent = new Intent(this, ExplainStorageActivity.class);
+        startActivityForResult(intent, 1);
     }
-    public void onActivityResult(int requestCode,int resultCode, Intent data){
-        if(resultCode == requestCode) {
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == requestCode) {
             Intent resultIntent = new Intent();
 
             EditText country = (EditText) findViewById(R.id.new_hosting_country);
@@ -50,22 +53,22 @@ public class NewHostingActivity extends AppCompatActivity{
             String price = data.getStringExtra("price");
             String imageuri = data.getStringExtra("imageuri");
 
-   /*     resultIntent.putExtra("country",ctry);
-        resultIntent.putExtra("city",cty);
-        resultIntent.putExtra("region",regin);
-        resultIntent.putExtra("road_addr",rdaddr);
-        resultIntent.putExtra("details",dtils);
-        resultIntent.putExtra("zipcode",mladdr);
-        resultIntent.putExtra("carrier",crrier);
+            resultIntent.putExtra("country", ctry);
+            resultIntent.putExtra("city", cty);
+            resultIntent.putExtra("region", regin);
+            resultIntent.putExtra("road_addr", rdaddr);
+            resultIntent.putExtra("details", dtils);
+            resultIntent.putExtra("zipcode", mladdr);
+            resultIntent.putExtra("carrier", crrier);
 
-        resultIntent.putExtra("name",data.getStringExtra("name"));
-        resultIntent.putExtra("desc",data.getStringExtra("desc"));
-        resultIntent.putExtra("min",data.getStringExtra("min"));
-        resultIntent.putExtra("max",data.getStringExtra("max"));
-        resultIntent.putExtra("price",data.getStringExtra("price"));
-        resultIntent.putExtra("imageuri",data.getStringExtra("imageuri"));
+            resultIntent.putExtra("name", data.getStringExtra("name"));
+            resultIntent.putExtra("desc", data.getStringExtra("desc"));
+            resultIntent.putExtra("min", data.getStringExtra("min"));
+            resultIntent.putExtra("max", data.getStringExtra("max"));
+            resultIntent.putExtra("price", data.getStringExtra("price"));
+            resultIntent.putExtra("imageuri", data.getStringExtra("imageuri"));
 
-        setResult(COMPLETED_OK,resultIntent);*/
+            setResult(COMPLETED_OK, resultIntent);
             Bundle bundle = new Bundle();
             bundle.putString("country", ctry);
             bundle.putString("city", cty);

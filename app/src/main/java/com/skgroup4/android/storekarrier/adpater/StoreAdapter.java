@@ -3,6 +3,7 @@ package com.skgroup4.android.storekarrier.adpater;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +16,9 @@ import android.widget.Toast;
 
 import com.skgroup4.android.storekarrier.R;
 import com.skgroup4.android.storekarrier.StoreActivity;
+import com.skgroup4.android.storekarrier.item.RepoHouse;
 import com.skgroup4.android.storekarrier.item.StoreItem;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -26,9 +29,10 @@ import java.util.ArrayList;
 public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> {
 
     private ArrayList<StoreItem> storeItemList;
+    private ArrayList<RepoHouse> houseList;
+    private boolean dataChecker = false;
     public static final int RECOMMEND_CODE = 10001;
     public static final int STORE_CODE = 10002;
-
     private static int code;
 
     Context mContext;
@@ -37,6 +41,12 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> 
         mContext = context;
         this.storeItemList = items;
         this.code = code;
+    }
+    public StoreAdapter(Context context, ArrayList<RepoHouse> items , int code , boolean checker){
+        mContext = context;
+        houseList = items;
+        this.code = code;
+        dataChecker = checker;
     }
     @Override
     public StoreAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
@@ -48,7 +58,20 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(StoreAdapter.ViewHolder viewHolder, int position) {
         final int itemPosition = position;
-        StoreItem item = storeItemList.get(itemPosition);
+
+        if(dataChecker){
+            RepoHouse item = houseList.get(itemPosition);
+            Picasso.with(mContext).load(item.getHouseImg()).fit().centerCrop().into(viewHolder.img);
+
+            viewHolder.textPrice.setText(item.getPrice());
+            viewHolder.textName.setText(item.getHostName() + "의 보관소");
+        }else{
+            StoreItem item = storeItemList.get(itemPosition);
+            viewHolder.img.setBackgroundResource(item.img);
+            viewHolder.textPrice.setText(item.price);
+            viewHolder.textName.setText(item.name+ "의 보관소");
+        }
+
         View.OnClickListener mListener = new  View.OnClickListener(){
 
             @Override
@@ -56,6 +79,11 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> 
                 switch(v.getId()){
                     case R.id.store_item_layout:
                         Intent intent = new Intent(mContext, StoreActivity.class);
+                        if(houseList!=null){
+                            RepoHouse item = houseList.get(itemPosition);
+                            intent.putExtra("houseInfo" , item);
+                        }
+
                         mContext.startActivity(intent);
                         break;
                     case R.id.store_save_btn:
@@ -65,9 +93,7 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> 
 
             }
         };
-        viewHolder.img.setBackgroundResource(item.img);
-        viewHolder.textPrice.setText(item.price);
-        viewHolder.textName.setText(item.name);
+
         viewHolder.saveBtn.setOnClickListener(mListener);
         viewHolder.layout.setOnClickListener(mListener);
     }
@@ -77,7 +103,14 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> 
     }
     @Override
     public int getItemCount() {
-        return storeItemList.size();
+        if(dataChecker)
+        {
+            return houseList.size();
+        }else{
+            Log.d("DATACHECKER" , "" + dataChecker);
+            return storeItemList.size();
+        }
+
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{

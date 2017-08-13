@@ -1,49 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content">
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="30dp"
-            android:textSize="30dp"
-            android:text="@string/name"/>
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/icons_profile"
-            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="30.0dip"
+            android:text="Mike"
+            android:textSize="30.0dip" />
+
+        <ImageView
+            android:layout_width="70.0dip"
+            android:layout_height="70.0dip"
             android:layout_alignParentRight="true"
-            />
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/sender6" />
     </RelativeLayout>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:textSize="15dp"
-        android:text="프로필 확인 및 수정"/>
+        android:layout_marginLeft="30.0dip"
+        android:text="프로필 확인 및 수정"
+        android:textSize="15.0dip" />
+
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="170dp">
+        android:layout_marginTop="170.0dip">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:layout_marginLeft="30dp"
-            android:text="게스트 모드로 전환"/>
+            android:layout_marginLeft="30.0dip"
+            android:text="게스트 모드로 전환"
+            android:textSize="25.0dip" />
+
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="180dp"
-            app:srcCompat="@drawable/ic_home_black_24dp"
-            android:layout_alignParentRight="true"/>
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="180.0dip"
+            android:layout_marginRight="30.0dip"
+            app:srcCompat="@drawable/icons8_refresh_48" />
     </RelativeLayout>
 </LinearLayout>
